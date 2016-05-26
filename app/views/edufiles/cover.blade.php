@@ -9,7 +9,7 @@
 	    <p class="greetings"><strong>Dear Sir or Madam:</strong></p> 
 		<p>I am web developer and more focused on the frontend. I use HTML5, CSS3, JavaScript, 
 		JQuery, Angular JS, bootstrap front end framework, and Laravel PHP-framework to make 
-		responsive and eye catching web apps. I also use with PHP and MySQL for the backend in 
+		responsive and eye catching web apps. I also use PHP and MySQL for the backend in 
 		my hobby web projects. In addition, I have good understanding and implementation skills of 
 		MVC design patterns and object oriented programing techniques.I am also very familiar with 
 		GitHub source control and Jira bug tracking and project management tools.</br>
