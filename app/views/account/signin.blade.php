@@ -6,7 +6,7 @@
 
 
 	<div class="container alt1">
-		<div class="login-panel panel panel-info center">
+		<div class="login-panel panel center">
 		 	<div class="panel-heading">  
                 <h3 class="panel-title">Sign In</h3>  
             </div>
@@ -33,7 +33,7 @@
 				</div>
                 
                 <div  class="sign-in-btns"> 
-					<button type="submit"class="btn btn-info"> Sign in </button>
+					<button type="submit"class="btn btn-login"> Sign in </button>
 					<a href="{{ URL::route('account-forgot-password-post') }}"> Forgot password?</a>
 			 	</div>
 			 	{{ Form::token() }}

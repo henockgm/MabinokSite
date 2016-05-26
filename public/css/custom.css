@@ -65,13 +65,7 @@ div.error-display {
   color: red; 
 }
 
-div.login-panel  {
- max-width: 500px;
-}
 
-div.signup-panel {
-  max-width: 700px;
-}
 
 
 p.hellouser {
@@ -107,9 +101,9 @@ ul > li > a {
   bottom: 0;
 }
 
-
+/* main nav item hover effect*/
 .navbar-top .main-nav:hover a.nav-item {
-  color:#6699ff;
+  color:#777;
 }
 
 .navbar-top .main-nav a.nav-item {
@@ -188,7 +182,7 @@ button.navbar-toggle.custom:hover  .icon-bar.custom{
 
 
 
- /*******************************     contact page         ****/
+ /*************** contact page **********/
 .contact-header { 
    font-family: 'Lato';
    color: #B0BEC5;
@@ -481,6 +475,18 @@ p.published-on {
   max-width: 800px;
 }
 
+
+/**********************  Panels setting *****************************/
+
+
+div.login-panel  {
+ max-width: 500px;
+}
+
+div.signup-panel {
+  max-width: 700px;
+}
+
 div.panel-create-post-heading {
   background: #fff;
   height: 50px;
@@ -494,11 +500,34 @@ div.panel-create-post {
 
 }
 
+div.panel-heading-create-account div.panel-heading,
+div.login-panel div.panel-heading {
+ background: #777 !important;
+ color: #fff;
+}
+
+button.btn-login, button.btn-account-create {
+  background: rgb(159, 175, 198);
+  color: #fff;
+}
+
+/**********************  Panels setting *****************************/
+
+
+
 .copy-right{
   width: 100%;
   text-align: center;
   font-weight: 600;
 }
+
+
+
+
+
+
+
+
 
 /*****************   FOOOTER  ************************************/
 

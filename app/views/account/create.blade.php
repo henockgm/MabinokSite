@@ -6,7 +6,7 @@
 
 
 	<div class="container alt1">
-		<div class="signup-panel panel panel-success center">
+		<div class="signup-panel panel center panel-heading-create-account">
 		 	<div class="panel-heading">  
                 <h3 class="panel-title"> Create your account </h3>  
             </div>
@@ -45,7 +45,7 @@
 					 	@endif
 					</div>
 
-					<button type="submit" class="btn btn-success center"> Sign up </button>   	
+					<button type="submit" class="btn btn-account-create center"> Sign up </button>   	
 					  	{{Form::token()}}
 				</form>
 			</div>

@@ -17,8 +17,9 @@
 
 
 	</head>
-	<body>		
+	<body>
 
+    @include('layout.header_slider');
 		@include('layout.menu')
         
 
