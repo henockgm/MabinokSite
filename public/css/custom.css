@@ -661,8 +661,9 @@ article.main-post-body-wrapper h2 {
 }
 
 .post-body-main p{
-  font-size: 1.1em;
+  font-size: 1.4em;
   padding: 5px 10px;
+  color: #404040;
 }
 
 .post-body-main pre code{
@@ -924,12 +925,25 @@ article.main-post-body-wrapper h2 {
 }
 
 .jumbotron  p {
-  font-size: 1.2em !important; 
-  font-weight: 300;
+  font-size: 1.1em !important; 
+  font-weight: 400;
+  line-height: 2.0em;
   margin: 0 auto;
   width: 70%;
-  padding: 15px 5px;
+  padding: 20px 50px;
+}
 
+
+p.greetings {
+ color: #;
+}
+
+.cover-letter p {
+ background: #fff;
+ color: #404040;
+}
+.cover-letter h4 {
+  margin-bottom: 30px;
 }
 
 .jumbotron  h2, .jumbotron h4 {
@@ -939,7 +953,6 @@ article.main-post-body-wrapper h2 {
 
 .jumbotron.project1, .jumbotron.project3 {
   background: #fff !important;
- 
 }
 
 .carousel-control.left, 
@@ -960,6 +973,7 @@ article.main-post-body-wrapper h2 {
 /*********    COMMON  CLASSES      ******************/
 
 .text-align-center {
+  width: 100%;
   text-align: center;
 }
 
