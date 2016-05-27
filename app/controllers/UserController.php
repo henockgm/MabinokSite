@@ -1,21 +1,19 @@
 <?php 
-//class UserController extends BaseController {
+class UserController extends BaseController {
 
-	/*
-	*  the layout used for responses
-	*/
+	public function getUserProfile($username) {
 
-//	protected $layout  = 'layouts.master';
-  
+		$user = User::where('username', '=', $username);
 
-    /*
-     * show user Profile 
-     */ 
+		if($user->count()) {
+		 	$user = $user->first();
 
-	//public function showProfile() {
+			return View::make('user.profile')
+				->with('user', $user);
 
-	//	$this->layout->content = View::make('user.profile');
-	//}
-//}
+		}
 
- ?>
+		return App::abort(404);
+	}
+}
+

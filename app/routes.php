@@ -149,7 +149,7 @@ Route::group(array('before' => 'auth'), function() {
     */
     Route::get('/user/{user}', array(
       'as' => 'show-user-profile',
-      'uses' => 'ProfileController@getUserProfile'
+      'uses' => 'UserController@getUserProfile'
     ));
 
     /*

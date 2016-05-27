@@ -22,7 +22,6 @@
     @include('layouts.header_slider')
 		@include('layouts.menu')
         
-
 		<div class="container"> 
 			@if(Session::has('global'))
 			<div class="alert alert-success"> {{ Session::get('global') }} 
@@ -42,8 +41,7 @@
 					<p class="copy-right"><span class="glyphicon glyphicon-copyright-mark"></span> mabinok.com 2016 </p>
 			 		@include('footers.flinks')
 			 		 @include('contact.contactus')
-			 		
-			 		 		
+			 					 		 		
 				</footer>
 			</div>
 		</div>
@@ -81,8 +79,6 @@
   }
 
 })();
-
-
 
 </script>
 
