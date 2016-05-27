@@ -19,8 +19,8 @@
 	</head>
 	<body>
 
-    @include('layout.header_slider')
-		@include('layout.menu')
+    @include('layouts.header_slider')
+		@include('layouts.menu')
         
 
 		<div class="container"> 
@@ -30,7 +30,7 @@
 			</div> 
 			@endif
 		</div>
-		<!-- @include('layout.navigation') -->
+		<!-- @include('layouts.navigation') -->
 
 		@yield('content')
        

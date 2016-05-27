@@ -1,4 +1,4 @@
-@extends('layout.main')
+@extends('layouts.main')
 @section ('title') References @stop
 @section('content')
 
