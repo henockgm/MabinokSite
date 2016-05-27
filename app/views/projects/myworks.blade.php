@@ -1,6 +1,6 @@
 @extends('layout.main')
 
-@section('title') Create account @stop
+@section('title') Recent Projects @stop
 
 @section('content')	
    
@@ -49,7 +49,7 @@
 
 	<div class="jumbotron project2">
 		<h2 class="display-3">  Jylistys  </h2>
-		<p> Made the website  <a href="www.jylistys.com">  www.jylistys.com  </a>  for jylistys' children project</p>
+		<p> Made the website  <a href="http://www.jylistys.com" target=_blank>  www.jylistys.com  </a>  for jylistys' children project</p>
 
 		<div id="projectSlider2" class="carousel slide" data-ride="carousel" >
 		  <!-- Indicators -->
