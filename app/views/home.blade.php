@@ -24,7 +24,7 @@
 		                @endif
 						
 					    <div class="article-blocks"> <p class="published-on">Posted {{ $post->created_at->diffForHumans()}}</p> </div>	    	    		 		
-					 	<div class="post-title-header"> <a class="post-title" href="{{ URL::action('post-show', $post->slug) }}">{{ Markdown::parse(Str::limit($post->title, 20)) }} </a> </div>			 	
+					 	<div class="post-title-header"> <a class="post-title post-title-thumbnail" href="{{ URL::action('post-show', $post->slug) }}">{{ Markdown::parse(Str::limit($post->title, 20)) }} </a> </div>			 	
 					 	<div class="post-body">{{ Markdown::parse(Str::limit($post->body, 70)) }}</div>	 
 					 	<div>
 					 		<a class="read-more" href="{{ URL::action('post-show', $post->slug) }}"> more &rarr;</a>

@@ -1,0 +1,1 @@
+The User you requested is not found. <a href="{{URL::route('home')}}">Go Back</a>

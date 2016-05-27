@@ -103,7 +103,7 @@ ul > li > a {
 
 /* main nav item hover effect*/
 .navbar-top .main-nav:hover a.nav-item {
-  color:#777;
+  color: rgba(0,0,0,0.7);
 }
 
 .navbar-top .main-nav a.nav-item {
@@ -369,8 +369,8 @@ p.published-on {
 }
 
 
+
 .post-title{
-  color: #9999CC;
   margin-top: 10px; 
   font-size: 1.0em;
   text-decoration: none;
@@ -378,13 +378,20 @@ p.published-on {
   cursor: default;
 }
 
+.post-title-thumbnail{
+   color: #5f5bec;
+}
+.post-title-main {
+  color: #7d97ed;;
+}
+
 .post-title:hover{
-  color: #9999CC;
+  color: #5f5bec;
   text-decoration: none;
 }
 
 .read-more {
-  color: #b3b3ff;
+  color: #5f5bec;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -400,7 +407,7 @@ p.published-on {
 .t-article { 
   position: relative;
   display: inline-block;
-  background: #f9f9f9;
+  background: #ffffff;
   float: left;
   height: 300px;
   padding-left: 5px;
@@ -409,13 +416,13 @@ p.published-on {
   margin-bottom: 50px;
   border: solid 1px #f2f2f2;
   border-radius: 5px;
-  box-shadow: 1px 1px 1px 21x #ccc;
+  /*box-shadow: 1px 1px 1px 1px #ccc;*/
 }
 
 
 .t-article:hover {
    /*border-top: 1px solid #9999FF; */
-   box-shadow: 0 0 0 1px #ccdcff;
+   box-shadow: 0 0 0 1px #8291ff;;
    background: #fff;
 }
 
@@ -532,8 +539,6 @@ button.btn-login, button.btn-account-create {
 /*****************   FOOOTER  ************************************/
 
 
-
-
 footer{ 
   min-height: 400px;
 }
@@ -599,47 +604,20 @@ ul.socialmedialinks {
   background: rgb(242, 247, 244);
 }
 
-.tw-custom  {
-  color:  #33cccc;
+.tw-custom, .fb-custom, .gp-custom, .in-custom, .ln-custom {
+  color: #538cc6;
 }
-.fb-custom {
-  color: #0033cc;
-}
-.gp-custom {
-  color: #ff3300;
-}
-.in-custom {
-  color:  #993300;
-}
-.ln-custom {
-  color: #0099cc;
-}
-
+ 
 .socialmedialinks li a:hover i {
  color: rgb(242, 247, 244);
 }
 
-.btn-twitter:hover {
-  background: #33cccc;
-}
-.btn-facebook:hover {
-  background: #0033cc;
-}
-
-.btn-googleplus:hover {
-  background: #ff3300;
-}
-
-.btn-instagram:hover {
-  background: #993300;
-}
-
-.btn-linkedin:hover {
-  background: #0099cc;
+.btn-twitter:hover, .btn-facebook:hover, .btn-googleplus:hover, .btn-instagram:hover, .btn-linkedin:hover  {
+  background: #538cc6;
 }
 
 
-/*****************   FOOOTER  ************************************/
+/*****************   /FOOOTER  *****************************************************************************************/
 
 
 .pagin-post{

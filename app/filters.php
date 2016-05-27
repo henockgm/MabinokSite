@@ -35,7 +35,7 @@ App::after(function($request, $response)
 
 Route::filter('auth', function()
 {
-	if (Auth::guest()) return Redirect::guest(URL::route('account-sign-in'));
+	//if (Auth::guest()) return Redirect::guest(URL::route('account-sign-in'));
 });
 
 
@@ -86,4 +86,10 @@ Route::filter('admin', function($route, $request) {
 		return App::abort(401, 'You are not authorized.');
 	}
 
+});
+
+
+App::missing(function($exception)
+{
+    return Response::view('errors.missing', array('url' => Request::url()), 404);
 });

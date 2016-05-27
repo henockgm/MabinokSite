@@ -147,10 +147,10 @@ Route::group(array('before' => 'auth'), function() {
     /*
     /  show profile(GET)
     */
-    Route::get('/user/{user}', array(
+    Route::get('/user/{username}', [
       'as' => 'show-user-profile',
-      'uses' => 'UserController@getUserProfile'
-    ));
+      'uses' => 'GizeController@getUserProfile'
+    ]);
 
     /*
     / Change password (GET)

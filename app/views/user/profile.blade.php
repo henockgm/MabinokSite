@@ -1,12 +1,14 @@
 @extends('layouts.main')
 
-@section('title')  {{ $user->username }} @stop
+@section('title') {{ $user->username }} @stop
 
-@section('content')
+<!-- @section('content')
 
     <div class="container alt1">
 		<p>  {{  $user->username }} ({{ $user->email }})</p>
 		<p>  </p>
     </div>
 
-@stop
+   -->
+
+@stop 
