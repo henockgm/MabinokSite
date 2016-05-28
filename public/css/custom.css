@@ -146,7 +146,7 @@ ul.navbar-top li.dropdown ul li a  {
 }
 
 .top-container .primary-nav{
-  background: red; /*rgb(159, 175, 198); #9999CC;*/
+  background: rgba(96, 115, 159, 0.8); /* rgb(159, 175, 198); #9999CC;*/
   /*border-bottom: solid 1px #99bbff;*/
 }
 
