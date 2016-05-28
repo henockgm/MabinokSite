@@ -93,7 +93,7 @@ class AccountController extends BaseController {
 					$message->to($user->email, $user->username)->subject('Activate your Account');
 				});
 				return Redirect::route('home')
-						->with('global', 'Your account has been created! We have sent you an email to activate your account! sent from Mac');
+						->with('global', 'Congrates! Your account has been created, an email is sent to you with account activattion link.');
 
 			}
 		} 
