@@ -12,8 +12,8 @@ class GizeController extends BaseController {
 					return View::make('user.profile')->with('user', $user);				
 				}
 
-				return App::Abort(404);
-				
+			     App::Abort(404);
+			     
 			}
 
 }

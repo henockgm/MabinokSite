@@ -1,1 +1,3 @@
-The User you requested is not found. <a href="{{URL::route('home')}}">Go Back</a>
+The requisted url is not found. Or the old URL is replaced.
+
+ <a href="{{URL::route('home')}}">  < Back to Home.</a>
