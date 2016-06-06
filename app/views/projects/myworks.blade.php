@@ -9,12 +9,10 @@
 	<div class="jumbotron project1">
 		<h2 class="display-3">  Raisoft Oy Ltd. </h2>
 		<p> During my work in Raisoft Oy I had been tasked to a plan, design and develop a software tool named 
-			“General Data Editor” for the company's inside usage which was intended for editing, adding, 
-			removing and mapping of different data structures in various MS SQL database tables in the process 
-      		of development of main software products. The purpose of this software is to handle the various data 
-      		manipulation operations on Microsoft SQL databases. I used CodGear Delphi development tool and Object 
-      		Pascal as programming language. Mercurial was intensively used as revision-control tool during the process.
-			I had also been working as a software tester for first few months of my work period in Raisoft.</p>
+			“Feature Editor” for the congiguration of feature sets of Raisoft's software products. The functionalities of the tool
+			included editing, adding,removing and mapping features in to a given version of product. I used CodGear Delphi development tool 
+			 and object pascal as programming language. Mercurial was used as revision-control tool.
+			I had also been working as a software tester for first few months of my work period in Raisoft. </p>
 
 		<div id="projectSlider1" class="carousel slide" data-ride="carousel" >
 		  <!-- Indicators -->
