@@ -727,68 +727,7 @@ article.main-post-body-wrapper h2 {
 }
 
 
-/*@@@@@@@@@@@@@@@@   MEDIA SCREENS        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
-@media screen and (max-width: 1000px) {  
-   .navbar-top {
-    /*display: none;*/
-   }
-
-   .top-container .primary-nav {
-      transition: all 0.5s ease;
-      /*background: #4d1a00;*/
-      background: #4d7380;
-      padding: 10px;
-    }
-
-  .top-container .primary-nav .navbar-top > li:hover a  {
-     color: orange;
-    }
-
-
-   .navbar-top .main-nav {
-      border-bottom: 1px solid #555;
-    }
-
-    .dropdown-menu {
-      margin-left: 5%;
-    }
-    .dropdown-menu .divider {
-      background-color: #888;
-    }
-
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-        color: #fff;
-        font-weight:  500;
-        font-family: sans-serif;
-    }
-
-     .navbar-default .navbar-nav .open .dropdown-menu > li:hover > a {
-        color: orange;   
-    }
-
-   .sm-links-block {
-     float: left;
-   }
-
-   .c-hamburger.c-hamburger--htx{
-      display: block;
-      float: right;
-   }
-}
-
-
-@media screen and (max-width: 760px) {
-
-   nav.primary-nav{
-    padding-left: 0px;
-    padding-right: 0px;
-   }
-}
-
-
-
-/*@@@@@@@@@@@@@@@@   / MEDIA SCREENS        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
 
 
@@ -927,17 +866,20 @@ article.main-post-body-wrapper h2 {
 
 /* *****************    PROJECTS PAGE *************************/
 
-.jumbotron {
-  padding: 20px 50px !important;
+.cover-letter  {
+ 
 }
 
-.jumbotron  p {
+.cover-letter  .mainText {
+  display: block;
   font-size: 1.1em !important; 
   font-weight: 400;
   line-height: 2.0em;
   margin: 0 auto;
   width: 70%;
-  padding: 20px 50px;
+  padding: 20px 50px; 
+  background: #fff;
+  color: #404040;
 }
 
 
@@ -945,10 +887,6 @@ p.greetings {
  color: #;
 }
 
-.cover-letter p {
- background: #fff;
- color: #404040;
-}
 .cover-letter h4 {
   margin-bottom: 30px;
 }
@@ -985,6 +923,89 @@ p.greetings {
 }
 
 /*********    COMMON  CLASSES      ******************/
+
+
+/*@@@@@@@@@@@@@@@@   MEDIA SCREENS        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 840px) {
+   .cover-letter .mainText {
+      margin: 0 auto; 
+      width: 95%;   
+      padding: 10px 10px;
+   }
+}
+
+@media screen and (max-width: 479px) {
+  .cover-letter  .mainText {
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px 10px;
+
+   }
+}
+
+@media screen and (max-width: 1000px) {  
+   .navbar-top {
+    /*display: none;*/
+   }
+   .top-container .primary-nav {
+      transition: all 0.5s ease;
+      /*background: #4d1a00;*/
+      background: #4d7380;
+      padding: 10px;
+    }
+
+  .top-container .primary-nav .navbar-top > li:hover a  {
+     color: orange;
+    }
+
+
+   .navbar-top .main-nav {
+      border-bottom: 1px solid #555;
+    }
+
+    .dropdown-menu {
+      margin-left: 5%;
+    }
+    .dropdown-menu .divider {
+      background-color: #888;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #fff;
+        font-weight:  500;
+        font-family: sans-serif;
+    }
+
+     .navbar-default .navbar-nav .open .dropdown-menu > li:hover > a {
+        color: orange;   
+    }
+
+   .sm-links-block {
+     float: left;
+   }
+
+   .c-hamburger.c-hamburger--htx{
+      display: block;
+      float: right;
+   }
+}
+
+
+@media screen and (max-width: 760px) {
+   nav.primary-nav{
+    padding-left: 0px;
+    padding-right: 0px;
+   }
+}
+
+
+
+
+
+/*@@@@@@@@@@@@@@@@   / MEDIA SCREENS        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
 
 
