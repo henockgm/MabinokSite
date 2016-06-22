@@ -7,7 +7,7 @@
  <div class="container projects-container"> 
 	<div class="project1">
 		
-		<div class="mainText"> <h3 class="display-3">  Raisoft Oy Ltd. </h3>
+		<div class="mainText"> <h3 class="file-title">  Raisoft Oy Ltd. </h3>
 			During my work in Raisoft Oy I had been tasked to a plan, design and develop a software tool named 
 			“Feature Editor” for the congiguration of feature sets of Raisoft's software products. The functionalities of the tool
 			included editing, adding,removing and mapping features in to a given version of product. I used CodGear Delphi development tool 
@@ -47,7 +47,8 @@
 
 	<div class="project2">
 		
-		<div class="mainText"> <h3 class="display-3">  Jylistys  </h3>
+		<div class="mainText"> 
+			<h3 class="file-title">  Jylistys  </h3>
 			Made the website  <a href="http://www.jylistys.com" target=_blank>  www.jylistys.com  </a>  for jylistys' children project</div>
 
 		<div id="projectSlider2" class="carousel slide" data-ride="carousel" >
@@ -82,7 +83,7 @@
 
 	<div class=" project3">
 		<div class="mainText">
-			<h3 class="display-3">  Hyvinvointivaltion vaalijat ry – HYVA </h3>
+			<h3 class="file-title">  Hyvinvointivaltion vaalijat ry – HYVA </h3>
 			I added custom css and html code to change the entire look and feel of the site. Desined the logo,
 			added header slider, rebuit the main navigation menu and so on.
 		</div>

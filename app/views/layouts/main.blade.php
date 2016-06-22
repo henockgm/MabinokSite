@@ -36,14 +36,14 @@
            <!-- footer -->
 
 		<div class="alt2">
-			<div class="container">
+			<!-- <div class="container"> -->
 				<footer>
 					<p class="copy-right"><span class="glyphicon glyphicon-copyright-mark"></span> mabinok.com 2016 </p>
 			 		@include('footers.flinks')
 			 		 @include('contact.contactus')
 			 					 		 		
 				</footer>
-			</div>
+			<!-- </div> -->
 		</div>
 
 

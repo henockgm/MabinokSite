@@ -862,7 +862,7 @@ article.main-post-body-wrapper h2 {
 
 
 
-/* *****************    PROJECTS PAGE *************************/
+/* *****************    PORTFOLIO SECTION  *************************/
 
 .cover-letter  {
  margin-bottom: 100px !important;
@@ -919,16 +919,12 @@ p.greetings {
 }
 
 
-.ref-holder {
-
-  width:90%; 
-  margin-bottom: 100px;
-}
-
 .cv-holder{
     width: 100%;
     text-align: center;
-   }
+    border-bottom: solid 1px #b3b3ff;
+    padding-bottom: 30px;
+}
 
 
 .pdf-holder {
@@ -937,7 +933,12 @@ p.greetings {
   height: 800px;
 }
 
-/* *****************    PROJECTS PAGE *************************/
+.file-title {
+   margin: 30px 0px;
+   text-align: center;
+}
+
+/* *****************    /PORTFOLIO SECTION *************************/
 
 
 /*********    COMMON  CLASSES      ******************/
@@ -948,6 +949,12 @@ p.greetings {
 }
 
 /*********    COMMON  CLASSES      ******************/
+
+
+
+
+
+
 
 
 /*@@@@@@@@@@@@@@@@   MEDIA SCREENS        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
@@ -963,8 +970,14 @@ p.greetings {
 
 @media only screen and (min-width: 760px) and (max-width: 1000px) {
    iframe.pdf-holder {
-    width: 800px;
+    width: 760px;
     height: 900px;  
+   }
+
+   div.mainText {
+      margin: 0 auto; 
+      width: 100%;   
+      padding: 10px 10px;
    }
 }
 
@@ -976,7 +989,7 @@ p.greetings {
 
    div.mainText {
       margin: 0 auto; 
-      width: 95%;   
+      width: 100%;   
       padding: 10px 10px;
    }
 }
@@ -996,12 +1009,12 @@ p.greetings {
   div.mainText {
     margin: 0 auto;
     width: 100%;
-    padding: 20px 10px;
+    padding: 15px 5px;
 
    }
 
    iframe.pdf-holder {
-    width: 400px;
+    width: 360px;
     height: 500px;  
     text-align: center;
    }
@@ -1013,16 +1026,44 @@ p.greetings {
 
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (min-width: 280px) and (max-width: 369px) {
   div.mainText {
     margin: 0 auto;
     width: 100%;
-    padding: 20px 10px;
+    padding: 15px 5px;
 
    }
 
-   div.alt2{
+   iframe.pdf-holder {
+    width: 280px;
+    height: 400px;  
+    text-align: center;
+   }
+
+   .cv-holder{
     width: 100%;
+    text-align: center;
+   }
+
+}
+
+@media screen and (max-width: 279px) {
+  div.mainText {
+    margin: 0 auto;
+    width: 100%;
+    padding: 10px 5px;
+
+   }
+
+    iframe.pdf-holder {
+      width: 200px;
+      height: 400px;  
+      text-align: center;
+   }
+
+   .cv-holder{
+     width: 100%;
+     text-align: center;
    }
 
 }
