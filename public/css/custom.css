@@ -254,9 +254,7 @@ div.contact-title {
     transition: opacity 2s ease-in;
 }*/
 
-.pdf-holder {
-  border: none;
-}
+
 
 
 .anim p, .anim div, .anim a, .anim img, .anim {
@@ -916,6 +914,17 @@ p.greetings {
   border: solid 1px #b3b3ff;
 }
 
+
+.ref-holder {
+
+  width:90%; 
+  margin-bottom: 100px;
+}
+
+
+.pdf-holder {
+  border: none;
+}
 
 /* *****************    PROJECTS PAGE *************************/
 
