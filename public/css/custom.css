@@ -141,8 +141,18 @@ ul.navbar-top li.dropdown ul li a  {
 
 
 
-.page-middle{
- width: 100%;
+.home-container{
+  width: 100%;
+}
+
+.posts-wrapper {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+article {
+  text-align: left;
 }
 
 .top-container .primary-nav{
@@ -353,9 +363,6 @@ div.contact-title {
     margin-bottom: 30px; 
 }
 
-.article-container {
-  display: block;
-}
 
 p.published-on {
   position: relative;
@@ -378,6 +385,7 @@ p.published-on {
 
 .post-title-thumbnail{
    color: #5f5bec;
+
 }
 .post-title-main {
   color: #7d97ed;;
@@ -396,15 +404,12 @@ p.published-on {
   padding-left: 5px; 
 }
 
-.article-container>div{
-  display: inline-block;
-}
 
-
-
-.t-article { 
+.article-blocks { 
   position: relative;
   display: inline-block;
+  width: 220px;
+  height: 300px;
   background: #ffffff;
   float: left;
   height: 300px;
@@ -418,15 +423,19 @@ p.published-on {
 }
 
 
-.t-article:hover {
+.article-blocks:hover {
    /*border-top: 1px solid #9999FF; */
    box-shadow: 0 0 0 1px #8291ff;;
    background: #fff;
 }
 
-.t-article>div{
+/*.article-blocks>div{
   display: inline-block;
-  width: 205px;
+
+}*/
+
+.article-blocks .post-body{
+  text-align: left;
 }
 
 .post-manip {
@@ -455,6 +464,7 @@ p.published-on {
 .post-title-header {
   height: auto;
   margin-top: 10px;
+  width: 100%;
 }
 
 .create-post {
@@ -619,17 +629,10 @@ ul.socialmedialinks {
 
 
 .pagin-post{
-  display: block;
+  display: inline-block;
   width: 100%;
   text-align: center;
 }
-
-.article-wrapper{
-  width: 220px;
-  height: 300px;
-}
-
-
 
 .post-body{
   max-height: 100px;
@@ -1032,8 +1035,7 @@ p.greetings {
     text-align: center;
    }
 
-  
-
+ 
 }
 
 @media screen and (min-width: 280px) and (max-width: 374px) {
@@ -1054,8 +1056,6 @@ p.greetings {
     width: 100%;
     text-align: center;
    }
-
-   
 }
 
 @media screen and (min-width: 200px) and (max-width: 279px) {
@@ -1078,6 +1078,48 @@ p.greetings {
    }
 
 }
+
+
+@media screen and (min-width: 725px) and (max-width: 825px) {
+
+  .home-container {
+     margin: 0 auto;
+     width: 98%;
+  }
+
+  .article-blocks { 
+    
+    width: 300px;
+    height: 300px;
+    padding-left: 25px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 50px; 
+}
+
+}
+
+
+@media screen and (min-width: 480px) and (max-width: 724px) {
+
+  .home-container {
+     margin: 0 auto;
+     width: 80%;
+  }
+
+  .article-blocks { 
+    
+    width: 100%;
+    height: 200px;
+    padding-left: 25px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 50px; 
+  }
+
+}
+
+
 
 @media screen and (max-width: 1000px) {  
    .navbar-top {
@@ -1134,8 +1176,25 @@ p.greetings {
    }
 
     article.main-post-body-wrapper {
-     width: 100%;
+     width: 99%;
    }
+}
+
+@media screen and (max-width: 479px) {
+  .home-container {
+     margin: 0 auto;
+     width: 100%;
+  }
+
+  .article-blocks { 
+    width: 100%;
+    height: 200px;
+    padding-left: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 50px; 
+  }
+
 }
 
 
