@@ -867,10 +867,10 @@ article.main-post-body-wrapper h2 {
 /* *****************    PROJECTS PAGE *************************/
 
 .cover-letter  {
- 
+ margin-bottom: 100px !important;
 }
 
-.cover-letter  .mainText {
+ div.mainText {
   display: block;
   font-size: 1.1em !important; 
   font-weight: 400;
@@ -891,12 +891,12 @@ p.greetings {
   margin-bottom: 30px;
 }
 
-.jumbotron  h2, .jumbotron h4 {
+  h2,  h4 {
   margin: 0 auto;
   width: 70%;
 }
 
-.jumbotron.project1, .jumbotron.project3 {
+.project1, .project3 {
   background: #fff !important;
 }
 
@@ -909,6 +909,11 @@ p.greetings {
    height:400px !important;
    margin: 0 auto;
    width: 70%;
+}
+
+.projects-container>div{
+  margin-bottom: 100px !important;
+  border: solid 1px #b3b3ff;
 }
 
 
@@ -930,7 +935,7 @@ p.greetings {
 
 
 @media only screen and (min-width: 480px) and (max-width: 840px) {
-   .cover-letter .mainText {
+   div.mainText {
       margin: 0 auto; 
       width: 95%;   
       padding: 10px 10px;
@@ -938,7 +943,7 @@ p.greetings {
 }
 
 @media screen and (max-width: 479px) {
-  .cover-letter  .mainText {
+  div.mainText {
     margin: 0 auto;
     width: 100%;
     padding: 20px 10px;

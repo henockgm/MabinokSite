@@ -4,15 +4,15 @@
 
 @section('content')	
    
-<!-- <div class="container"> -->
-
-	<div class="jumbotron project1">
-		<h2 class="display-3">  Raisoft Oy Ltd. </h2>
-		<p> During my work in Raisoft Oy I had been tasked to a plan, design and develop a software tool named 
+ <div class="container projects-container"> 
+	<div class="project1">
+		
+		<div class="mainText"> <h3 class="display-3">  Raisoft Oy Ltd. </h3>
+			During my work in Raisoft Oy I had been tasked to a plan, design and develop a software tool named 
 			“Feature Editor” for the congiguration of feature sets of Raisoft's software products. The functionalities of the tool
 			included editing, adding,removing and mapping features in to a given version of product. I used CodGear Delphi development tool 
 			 and object pascal as programming language. Mercurial was used as revision-control tool.
-			I had also been working as a software tester for first few months of my work period in Raisoft. </p>
+			I had also been working as a software tester for first few months of my work period in Raisoft. </div>
 
 		<div id="projectSlider1" class="carousel slide" data-ride="carousel" >
 		  <!-- Indicators -->
@@ -43,11 +43,12 @@
 		  	</a>
 		  </div>
 		</div> 
-	</div><!-- /jumbotron  -->
+	</div><!-- /  -->
 
-	<div class="jumbotron project2">
-		<h2 class="display-3">  Jylistys  </h2>
-		<p> Made the website  <a href="http://www.jylistys.com" target=_blank>  www.jylistys.com  </a>  for jylistys' children project</p>
+	<div class="project2">
+		
+		<div class="mainText"> <h3 class="display-3">  Jylistys  </h3>
+			Made the website  <a href="http://www.jylistys.com" target=_blank>  www.jylistys.com  </a>  for jylistys' children project</div>
 
 		<div id="projectSlider2" class="carousel slide" data-ride="carousel" >
 		  <!-- Indicators -->
@@ -77,13 +78,14 @@
 		  	</a>
 		  </div>
 		</div> 
-	</div><!-- /jumbotron  -->
+	</div><!-- /  -->
 
-	<div class="jumbotron project3">
-		<h2 class="display-3">  Hyvinvointivaltion vaalijat ry – HYVA </h2>
-		<p>I added custom css and html code to change the entire look and feel of the site. Desined the logo,
+	<div class=" project3">
+		<div class="mainText">
+			<h3 class="display-3">  Hyvinvointivaltion vaalijat ry – HYVA </h3>
+			I added custom css and html code to change the entire look and feel of the site. Desined the logo,
 			added header slider, rebuit the main navigation menu and so on.
-		</p>
+		</div>
 
 		<div id="projectSlider3" class="carousel slide" data-ride="carousel" >
 		  <!-- Indicators -->
@@ -98,9 +100,9 @@
 
 		  </div>
 		</div> 
-	</div><!-- /jumbotron  -->
+	</div><!-- /  -->
 
 
-<!--</div>  /container -->
+</div>  <!--/container -->
          
 @stop

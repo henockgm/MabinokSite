@@ -2,12 +2,13 @@
 @section ('title') Certificate @stop
 @section('content')
  
-<div class="container">
-	<div class="cover-letter">
+<div class="container cover-letter">
+	
 		<h4 class="text-align-center"> Cover letter </h4>
 		
 		<div class="mainText">
-			<p class="greetings"><strong>Dear Sir or Madam:</strong></p> I am web developer and more focused on the frontend. I use HTML5, CSS3, JavaScript, 
+			<p class="greetings"><strong>Dear Sir or Madam:</strong></p> 
+			I am web developer and more focused on the frontend. I use HTML5, CSS3, JavaScript, 
 			JQuery, Angular JS, bootstrap front end framework, and Laravel PHP-framework to make 
 			responsive and eye catching web apps. I also use PHP and MySQL for the backend in 
 			my hobby web projects. In addition, I have good understanding and implementation skills of 
@@ -30,6 +31,5 @@
 			 </br>Tel: 0443645470
 			 </br>Email: heniboz@gmail.com
 		</div>
-	</div>
 </div>
 @stop
