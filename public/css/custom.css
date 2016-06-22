@@ -965,6 +965,8 @@ p.greetings {
     width: 900px;
     height: 1000px;  
    }
+
+   
 }
 
 
@@ -979,6 +981,10 @@ p.greetings {
       width: 100%;   
       padding: 10px 10px;
    }
+
+   article.main-post-body-wrapper {
+     width: 95%;
+   }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 760px) {
@@ -992,6 +998,8 @@ p.greetings {
       width: 100%;   
       padding: 10px 10px;
    }
+
+  
 }
 
 
@@ -1024,6 +1032,8 @@ p.greetings {
     text-align: center;
    }
 
+  
+
 }
 
 @media screen and (min-width: 280px) and (max-width: 374px) {
@@ -1045,6 +1055,7 @@ p.greetings {
     text-align: center;
    }
 
+   
 }
 
 @media screen and (min-width: 200px) and (max-width: 279px) {
@@ -1120,6 +1131,10 @@ p.greetings {
    nav.primary-nav{
     padding-left: 0px;
     padding-right: 0px;
+   }
+
+    article.main-post-body-wrapper {
+     width: 100%;
    }
 }
 
