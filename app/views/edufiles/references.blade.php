@@ -8,14 +8,14 @@
       
     <div class="ref-holder">
         <h4 class="display-3" style="margin:0;"> Johan Johansson  </h4>
-	   <iframe class="pdf-holder" src="{{ asset('files/References.pdf') }}" width="960px" height="1200px;"> </iframe>
+	   <iframe class="pdf-holder" src="{{ asset('files/References.pdf') }}"> </iframe>
     </div>
      
 
 
     <div class="ref-holder">
          <h4 class="display-3" style="margin:0;"> Juha Nurmela  </h4>
-	   <iframe class="pdf-holder" src="{{ asset('files/ref_juhanurmela.pdf') }}" width="960px" height="800px;"> </iframe>
+	   <iframe class="pdf-holder" src="{{ asset('files/ref_juhanurmela.pdf') }}"> </iframe>
     </div>
  </div>
 @stop

@@ -925,9 +925,16 @@ p.greetings {
   margin-bottom: 100px;
 }
 
+.cv-holder{
+    width: 100%;
+    text-align: center;
+   }
+
 
 .pdf-holder {
   border: none;
+  width: 960px;
+  height: 800px;
 }
 
 /* *****************    PROJECTS PAGE *************************/
@@ -946,19 +953,34 @@ p.greetings {
 /*@@@@@@@@@@@@@@@@   MEDIA SCREENS        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
 
+@media screen and (min-width: 1000px) and (max-width: 1340px) {
+   iframe.pdf-holder {
+    width: 900px;
+    height: 1000px;  
+   }
+}
 
-@media only screen and (min-width: 480px) and (max-width: 840px) {
+
+@media only screen and (min-width: 760px) and (max-width: 1000px) {
+   iframe.pdf-holder {
+    width: 800px;
+    height: 900px;  
+   }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 760px) {
+   iframe.pdf-holder {
+    width: 500px;
+    height: 600px;  
+   } 
+
    div.mainText {
       margin: 0 auto; 
       width: 95%;   
       padding: 10px 10px;
    }
-
-   /*.carousel-inner > .item > img{  
-      height: 200px !important;   
-      width: 100%;
-   }*/
 }
+
 
 @media only screen and (min-width: 960px) {
    
@@ -967,9 +989,10 @@ p.greetings {
       margin: 0 auto;  
       width: 70%;
    }
+
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (min-width: 370px) and (max-width: 479px) {
   div.mainText {
     margin: 0 auto;
     width: 100%;
@@ -977,10 +1000,31 @@ p.greetings {
 
    }
 
-  /* .carousel-inner > .item > img{  
-      height:200px !important;     
-      width: 100%;
-    }*/
+   iframe.pdf-holder {
+    width: 400px;
+    height: 500px;  
+    text-align: center;
+   }
+
+   .cv-holder{
+    width: 100%;
+    text-align: center;
+   }
+
+}
+
+@media screen and (max-width: 370px) {
+  div.mainText {
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px 10px;
+
+   }
+
+   div.alt2{
+    width: 100%;
+   }
+
 }
 
 @media screen and (max-width: 1000px) {  
