@@ -894,6 +894,10 @@ p.greetings {
   width: 70%;
 }
 
+.main-post-body-wrapper h2{
+  width: 100%;
+}
+
 .project1, .project3 {
   background: #fff !important;
 }
