@@ -907,11 +907,11 @@ p.greetings {
     background-image: none !important; 
 }
 
-.carousel-inner > .item > img{  
+/*.carousel-inner > .item > img{  
    height:400px !important;
    margin: 0 auto;
    width: 70%;
-}
+}*/
 
 .projects-container>div{
   margin-bottom: 100px !important;
@@ -953,6 +953,20 @@ p.greetings {
       width: 95%;   
       padding: 10px 10px;
    }
+
+   /*.carousel-inner > .item > img{  
+      height: 200px !important;   
+      width: 100%;
+   }*/
+}
+
+@media only screen and (min-width: 960px) {
+   
+   .carousel-inner > .item > img{  
+      height: auto !important;
+      margin: 0 auto;  
+      width: 70%;
+   }
 }
 
 @media screen and (max-width: 479px) {
@@ -962,6 +976,11 @@ p.greetings {
     padding: 20px 10px;
 
    }
+
+  /* .carousel-inner > .item > img{  
+      height:200px !important;     
+      width: 100%;
+    }*/
 }
 
 @media screen and (max-width: 1000px) {  
