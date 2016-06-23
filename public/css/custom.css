@@ -973,7 +973,7 @@ p.greetings {
 }
 
 
-@media only screen and (min-width: 760px) and (max-width: 1000px) {
+@media only screen and (min-width: 768px) and (max-width: 999px) {
    iframe.pdf-holder {
     width: 760px;
     height: 900px;  
@@ -988,11 +988,17 @@ p.greetings {
    article.main-post-body-wrapper {
      width: 95%;
    }
+
+  .c-hamburger.c-hamburger--htx{
+      display: none;   
+   }
+
+
 }
 
-@media only screen and (min-width: 480px) and (max-width: 760px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
    iframe.pdf-holder {
-    width: 500px;
+    width: 470px;
     height: 600px;  
    } 
 
@@ -1006,16 +1012,6 @@ p.greetings {
 }
 
 
-@media only screen and (min-width: 960px) {
-   
-   .carousel-inner > .item > img{  
-      height: auto !important;
-      margin: 0 auto;  
-      width: 70%;
-   }
-
-}
-
 @media screen and (min-width: 375px) and (max-width: 479px) {
   div.mainText {
     margin: 0 auto;
@@ -1025,7 +1021,7 @@ p.greetings {
    }
 
    iframe.pdf-holder {
-    width: 375px;
+    width: 360px;
     height: 500px;  
     text-align: center;
    }
@@ -1038,6 +1034,7 @@ p.greetings {
  
 }
 
+
 @media screen and (min-width: 280px) and (max-width: 374px) {
   div.mainText {
     margin: 0 auto;
@@ -1047,16 +1044,33 @@ p.greetings {
    }
 
    iframe.pdf-holder {
-    width: 250px;
-    height: 400px;  
+    width: 360px;
+    height: 450px;  
     text-align: center;
+
    }
 
    .cv-holder{
     width: 100%;
     text-align: center;
    }
+
 }
+
+
+@media only screen and (min-width: 960px) {
+   
+   .carousel-inner > .item > img{  
+      height: auto !important;
+      margin: 0 auto;  
+      width: 70%;
+   }
+
+}
+
+
+
+
 
 @media screen and (min-width: 200px) and (max-width: 279px) {
   div.mainText {
@@ -1134,7 +1148,7 @@ p.greetings {
 
   .top-container .primary-nav .navbar-top > li:hover a  {
      color: orange;
-    }
+   }
 
 
    .navbar-top .main-nav {
@@ -1162,14 +1176,10 @@ p.greetings {
      float: left;
    }
 
-   .c-hamburger.c-hamburger--htx{
-      display: block;
-      float: right;
-   }
 }
 
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
    nav.primary-nav{
     padding-left: 0px;
     padding-right: 0px;
@@ -1177,6 +1187,11 @@ p.greetings {
 
     article.main-post-body-wrapper {
      width: 99%;
+   }
+
+   .c-hamburger.c-hamburger--htx{
+      display: block;
+      float: right;
    }
 }
 
@@ -1196,6 +1211,7 @@ p.greetings {
   }
 
 }
+
 
 
 
