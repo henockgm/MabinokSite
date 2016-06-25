@@ -41,10 +41,11 @@ div.top-container {
 
 nav.primary-nav {
   margin: 0 auto;
+  max-width: 1180px;
   padding-top: 30px;
   padding-left: 50px;
   padding-right: 50px;
-  
+
 }
 
  .navbar-header {
@@ -156,7 +157,13 @@ article {
   text-align: left;
 }
 
-.top-container .primary-nav{
+.navbar-default{
+  background: transparent !important;
+  border-color: transparent !important;
+
+}
+
+div.top-container {
   background: rgba(96, 115, 159, 0.8); /* rgb(159, 175, 198); #9999CC;*/
   /*border-bottom: solid 1px #99bbff;*/
 }
@@ -1129,21 +1136,16 @@ iframe.pdf-holder {
    .navbar-top {
     /*display: none;*/
    }
-   .top-container .primary-nav {
+   .top-container {
       transition: all 0.5s ease;
       /*background: #4d1a00;*/
       background: #4d7380;
       padding: 10px;
     }
 
-  .top-container .primary-nav .navbar-top > li:hover a  {
+  /*.top-container .primary-nav .navbar-top > li:hover a  {
      color: orange;
-   }
-
-
-   .navbar-top .main-nav {
-      border-bottom: 1px solid #555;
-    }
+   }*/
 
     .dropdown-menu {
       margin-left: 5%;
@@ -1155,12 +1157,12 @@ iframe.pdf-holder {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
         color: #fff;
         font-weight:  500;
-        font-family: sans-serif;
+        /*font-family: sans-serif;*/
     }
 
-     .navbar-default .navbar-nav .open .dropdown-menu > li:hover > a {
+    /* .navbar-default .navbar-nav .open .dropdown-menu > li:hover > a {
         color: orange;   
-    }
+    }*/
 
    .sm-links-block {
      float: left;
