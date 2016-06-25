@@ -7,7 +7,7 @@
     <!-- <link href="public/css/social-sharing.css" rel="stylesheet"> -->
     {{ HTML::style('css/social-sharing.css') }}
 		<meta charset="UTF-8">	    
-		<meta name="viewport" content="initial-scale=1.0">
+		<meta name="viewport content="width="device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="apple-touch-startup-image" href="http://mabinok.com/public/images/ios_startup-6@2x.png" sizes="750x1294">
 		<!-- <link href="/packages/css/bootstrap.css" rel="stylesheet"> -->

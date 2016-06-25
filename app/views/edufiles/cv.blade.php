@@ -3,7 +3,7 @@
 @section('content')
  
     <div class="cv-holder">
-	<iframe class="pdf-holder" src="{{ asset('files/CV_HenockMullissa.pdf') }}"  frameBorder="0"> </iframe>
+		<iframe class="pdf-holder" src="{{ asset('files/CV_HenockMullissa.pdf') }}" scrolling=no> </iframe>
     </div>
-      
+      <!--  -->
 @stop
