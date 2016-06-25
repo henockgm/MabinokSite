@@ -4,7 +4,7 @@
 
 
      
-    <div class="container project-container">
+    
       
     <div class="cv-holder">
         <h4 class="file-title"> Robert Äström and Johan Johansson - Raisoft Oy Ltd.  </h4>
@@ -15,5 +15,5 @@
          <h4 class="file-title"> Juha Nurmela - Finland Statistics Research Head  </h4>
 	   <iframe class="pdf-holder" src="{{ asset('files/ref_juhanurmela.pdf') }}"> </iframe>
     </div>
- </div>
+
 @stop
