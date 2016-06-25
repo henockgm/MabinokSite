@@ -990,6 +990,13 @@ iframe.pdf-holder {
     height: 900px;  
    }
 
+   .cv-holder{
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    overflow: scroll;
+   }
+
    div.mainText {
       margin: 0 auto; 
       width: 100%;   
@@ -1013,10 +1020,17 @@ iframe.pdf-holder {
     height: 600px;  
    } 
 
+   .cv-holder{
+    margin: 0;
+    width: 100%;
+    text-align: center;
+   }
+
    div.mainText {
       margin: 0 auto; 
       width: 100%;   
       padding: 10px 10px;
+
    }
  
 }
@@ -1041,6 +1055,7 @@ iframe.pdf-holder {
     margin: 0;
     width: 100%;
     text-align: center;
+    overflow: scroll;
    }
 
  
@@ -1068,6 +1083,7 @@ iframe.pdf-holder {
     margin: 0;
     width: 100%;
     text-align: center;
+    overflow: scroll;
    }
 
 }

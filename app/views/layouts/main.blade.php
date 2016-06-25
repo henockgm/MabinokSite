@@ -2,9 +2,7 @@
 <html>
 	<head>
 		<title> @yield('title')| Mabinok </title>
-		<!-- <link rel="stylesheet" type="text/css" href="/packages/css/main.css"> -->
-    
-    <!-- <link href="public/css/social-sharing.css" rel="stylesheet"> -->
+	
     {{ HTML::style('css/social-sharing.css') }}
 		<meta charset="UTF-8">	    
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +10,6 @@
     {{ HTML::style('css/bootstrap.css') }}
     {{ HTML::style('css/custom.css') }}
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
-		<!-- <link rel="stylesheet" type="text/css" href="/packages/css/blueimp-gallery.min.css"> -->
     {{ HTML::style('css/blueimp-gallery.min.css') }}
 
                  
@@ -49,14 +46,11 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<!-- <script src="/packages/js/bootstrap.js"></script> -->
+
 {{ HTML::script('js/bootstrap.js'); }}
-<!-- <script src="/packages/js/blueimp-gallery.min.js"></script> -->
+
 {{ HTML::script('js/blueimp-gallery.min.js'); }}
 
-
-
-<!--?????????????????????????      Testing            ???????????????????????? -->
 
 
 <script>
@@ -83,46 +77,24 @@
 </script>
 
 
-<!-- ????????????????????????????????????????????????????????????????????????? -->
-
-<script> 
-    // var link = "";              
-    //     for (var i = 1; i < 50; i++) {
-    //              link = '<a href="/jfu/server/php/files/' + i + '.jpg" title=""> <img src="/jfu/server/php/files/thumbnail/' + i + '.jpg" alt=""> </a>' ;
-
-    //              $( "#links" ).append(link);
-    //         };    
-</script> 
-
-<script>
-// document.getElementById('links').onclick = function (event) {
-//     event = event || window.event;
-//     var target = event.target || event.srcElement,
-//         link = target.src ? target.parentNode : target,
-//         options = {index: link, event: event},
-//         links = this.getElementsByTagName('a');
-//     blueimp.Gallery(links, options);
-// };
-</script>
-
 <script>
 
-// // Add slideup & fadein animation to dropdown
-//    $('.dropdown').on('show.bs.dropdown', function(e){
-//       var $dropdown = $(this).find('.dropdown-menu');
-//       var orig_margin_top = parseInt($dropdown.css('margin-top'));
-//       $dropdown.css({'margin-top': (orig_margin_top + 10) + 'px', opacity: 0}).animate({'margin-top': orig_margin_top + 'px', opacity: 1}, 300, function(){
-//          $(this).css({'margin-top':''});
-//       });
-//    });
-//    // Add slidedown & fadeout animation to dropdown
-//    $('.dropdown').on('hide.bs.dropdown', function(e){
-//       var $dropdown = $(this).find('.dropdown-menu');
-//       var orig_margin_top = parseInt($dropdown.css('margin-top'));
-//       $dropdown.css({'margin-top': orig_margin_top + 'px', opacity: 1, display: 'block'}).animate({'margin-top': (orig_margin_top + 10) + 'px', opacity: 0}, 300, function(){
-//          $(this).css({'margin-top':'', display:''});
-//       });
-//    });
+// Add slideup & fadein animation to dropdown
+   $('.dropdown').on('show.bs.dropdown', function(e){
+      var $dropdown = $(this).find('.dropdown-menu');
+      var orig_margin_top = parseInt($dropdown.css('margin-top'));
+      $dropdown.css({'margin-top': (orig_margin_top + 10) + 'px', opacity: 0}).animate({'margin-top': orig_margin_top + 'px', opacity: 1}, 300, function(){
+         $(this).css({'margin-top':''});
+      });
+   });
+   // Add slidedown & fadeout animation to dropdown
+   $('.dropdown').on('hide.bs.dropdown', function(e){
+      var $dropdown = $(this).find('.dropdown-menu');
+      var orig_margin_top = parseInt($dropdown.css('margin-top'));
+      $dropdown.css({'margin-top': orig_margin_top + 'px', opacity: 1, display: 'block'}).animate({'margin-top': (orig_margin_top + 10) + 'px', opacity: 0}, 300, function(){
+         $(this).css({'margin-top':'', display:''});
+      });
+   });
 
 </script>
 
