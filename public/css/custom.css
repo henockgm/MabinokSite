@@ -39,7 +39,7 @@ div.top-container {
   margin-bottom: 30px;
 }
 
-nav.primary-nav {
+nav.primary-nav, footer {
   margin: 0 auto;
   max-width: 1180px;
   padding-top: 30px;
@@ -1156,8 +1156,7 @@ iframe.pdf-holder {
 
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
         color: #fff;
-        font-weight:  500;
-        /*font-family: sans-serif;*/
+        font-weight:  500;     
     }
 
     /* .navbar-default .navbar-nav .open .dropdown-menu > li:hover > a {
