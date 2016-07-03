@@ -19,7 +19,7 @@
           <li class="main-nav">
             <a href="{{ URL::route('home')}}" class="nav-item"> <span class="glyphicon glyphicon-home" > </span> Home </a>
           </li>
-          <li class="main-nav"> <a href="#" class="nav-item"> About  </a> </li>
+          <!-- <li class="main-nav"> <a href="#" class="nav-item"> About  </a> </li> -->
                    
           <li class="dropdown main-nav">
             <a class="dropdown-toggle nav-item" data-toggle="dropdown" href="#"> <span class="glyphicon glyphicon-folder-open"></span> Portfolio <span class="caret"></span> </a>
@@ -38,14 +38,7 @@
           </li>                    
           <li class="main-nav"> <a  href="{{ URL::route('contact-contact-me')}}" class="nav-item"> <span class="glyphicon glyphicon-phone-alt"></span> Contact </a> </li>
                    
-         <li class="dropdown main-nav">
-            <a class="dropdown-toggle nav-item" data-toggle="dropdown" href="#">  <span class="glyphicon glyphicon-film"></span> Gallery <span class="caret"></span> </a>
-            <ul class="dropdown-menu" role="menu">
-              <li> <a href="#"> <span class="glyphicon glyphicon-picture"></span> Photos </a> </li>
-              <li> <a href="#"> <span class="glyphicon glyphicon-facetime-video"></span>  Videos </a> </li>
-              <!-- <li class="divider"> </li> -->
-            </ul>
-         </li>
+         
         </ul>
        
         <ul class="nav navbar-nav navbar-right navbar-top">

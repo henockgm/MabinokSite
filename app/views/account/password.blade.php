@@ -7,12 +7,12 @@
 
 
 	<div class="container alt1 anim" >
-		<div class="change-password-panel panel panel-primary center">
+		<div class="change-password-panel panel panel-primary panels">
 		 	<div class="panel-heading">  
                 <h3 class="panel-title"> Change Your Password </h3>  
             </div>
             <div class="panel-body">  
-				<form action="{{ URL::route('account-change-password-post')  }}" method="post" role="form" class="center">
+				<form action="{{ URL::route('account-change-password-post')  }}" method="post" role="form">
 					<div class="form-group">		
 						Old password: <input type="password" name="old_password" class="form-control">
 						@if($errors->has('old_password'))

@@ -512,8 +512,10 @@ p.published-on {
 /**********************  Panels setting *****************************/
 
 
-div.login-panel  {
+div.panels  {
  max-width: 500px;
+ margin: 0 auto;
+ width: 75%;
 }
 
 div.signup-panel {
@@ -973,9 +975,9 @@ iframe.pdf-holder {
 
 
 
-
-
-
+div.panels form {
+    margin-top: 30px;
+}
 
 
 /*@@@@@@@@@@@@@@@@   MEDIA SCREENS        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
@@ -1039,6 +1041,14 @@ iframe.pdf-holder {
       padding: 10px 10px;
 
    }
+
+   div.panels form {
+    margin: 20px;
+  }
+
+   div.panels {
+    width: 90%;
+  }
  
 }
 
@@ -1223,7 +1233,6 @@ iframe.pdf-holder {
       font-size: 2em;
    }
 
-
 }
 
 @media screen and (max-width: 479px) {
@@ -1244,8 +1253,18 @@ iframe.pdf-holder {
     text-align: center;
     padding: 15px 2px;
   }
+
+  div.panels {
+    width: 100%;
+  }
+
+  div.panels form {
+    margin-left: 0;
+    margin-right: 0;
+  }
   
 }
+
 
 
 
