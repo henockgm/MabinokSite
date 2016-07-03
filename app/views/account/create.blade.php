@@ -6,7 +6,7 @@
 
 
 	<div class="container alt1">
-		<div class="signup-panel panel panel-heading-create-account panels">
+		<div class="signup-panel panel panels panel-heading-create-account">
 		 	<div class="panel-heading">  
                 <h3 class="panel-title"> Create your account </h3>  
             </div>
