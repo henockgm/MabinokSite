@@ -14,17 +14,16 @@
    
     
 		<div class=" contact-title contact-header"> About me  </div>
-		<div class="am">
-			<div class="test-am am-l">
-				<div class="am-img">
-			    	<img src="{{ asset('images/me3.png') }}" class="img-circle" alt="" width="120" height="120">    
-			    </div>
+
+		<div class="contact-me">
+
+			<div class="contact-me-img">			
+			    	<img src="{{ asset('images/me3.png') }}" class="img-circle" alt="" width="120" height="120">    	    
 			</div>
-			<div class="test-am am-r">
-			    <div class="am-details">	    	
-			    	<p> My name is Henock Girmachew Mullissa </p>
-			    	<p> Software developer, more intersted in web site designing and development with the latest web technologies.</p>
-			    </div>
+
+			<div class="contact-me-desc">		    	    	
+			    	<p> My name is Henock Girmachew Mullissa 
+			    	Software developer, more intersted in web site designing and development with the latest web technologies.</p>	    
 			</div>
         </div>    
   </div>

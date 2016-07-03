@@ -214,11 +214,7 @@ div.contact-title {
   margin-bottom: 40px;
 }
 
-.am {
-   overflow: hidden;
-    position: relative;
-    width: 100%;
-}
+
 .contact-info {
   font-family: monospace;
   display: block; 
@@ -231,32 +227,36 @@ div.contact-title {
    color: #B0BEC5;
 }
 
-.test-am {
+.contact-me {  
+    width: 100%;
+    min-height: 200px;
+    
+}
+
+.contact-me>div{
   display: inline-block;
-  float:left;
-}
-.am-l {
-  width: 30%;
-
+  float: left;
 }
 
-.am-r {
-    width: 68%; 
-    height: 100%;
-    position: absolute;
-    right: 0;
-    top: 0;.   
-    margin-left: 10px
-    padding: 10px;
+.contact-me-img {  
+    width: 35%;
+    height: 200px;
+    padding-top: 40px;
+    padding-right: 25px;
+    
 }
 
-.test-am .am-img {  
-    float: right;
-    margin-right: 30px;
+.contact-me-img img {  
+   float: right;
 }
 
-.test-am .am-details {  
-    margin-left: 5px;
+.contact-me-desc{  
+    width: 65%;
+    height: 200px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    line-height: 1.8em;
 }
 
 
@@ -1232,6 +1232,19 @@ iframe.pdf-holder {
      width: 98%;
   }
 
+  .contact-me>div {
+    width: 100%;
+    display: block;
+  }
+
+  .contact-me-img img{
+    float: none;
+  }
+  .contact-me{
+    text-align: center;
+    padding: 15px 2px;
+  }
+  
 }
 
 
