@@ -3,7 +3,7 @@
 class AccountController extends BaseController {
 
 	public function getSignIn() { 
-		return View::make('account.signin')->with('title', 'Mabinok | Login');
+		return View::make('account.signin');
 	}
 
 	public function postSignIn() {
@@ -52,7 +52,7 @@ class AccountController extends BaseController {
 
 	public function getCreate() {
 
-       return View::make('account.create')->with('title', 'Mabinok | Register');
+       return View::make('account.create');
 	}
 
 	public function postCreate() {
@@ -123,7 +123,7 @@ class AccountController extends BaseController {
 
 	public function getChangePassword() {
 
-		return View::make('account.password')->with('title', 'Mabinok | Change Password');
+		return View::make('account.password');
 
 	}
 
@@ -152,8 +152,7 @@ class AccountController extends BaseController {
 
 					if($user->save()) {
 						return Redirect::route('home')
-							->with('global', 'Your password has been changed successfully!')
-							->with('abbabba', 'Testing session message');						
+							->with('global', 'Your password has been changed successfully!');				
 					} 
 			} else {
 				return Redirect::route('account-change-password')
@@ -168,7 +167,7 @@ class AccountController extends BaseController {
 	}
 
 	public function getForgotPassword() {
-		 return View::make('account.forgot')->with('title', 'Mabinok | Reset Password');
+		 return View::make('account.forgot');
 	}
 
 	public function postForgotPassword() {
@@ -204,7 +203,7 @@ class AccountController extends BaseController {
 					});
 
 					return Redirect::route('home')
-						->with('global', 'We have sent you a new password by email.');				
+						->with('global', 'An email is sent to you with a link to reset your password.');				
 				}
 
 			}
