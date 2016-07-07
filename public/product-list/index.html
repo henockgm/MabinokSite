@@ -1,0 +1,175 @@
+<!doctype html>
+<html >
+  <head>
+   <meta charset="UTF-8">
+   <script src="angular.min.js"></script>
+   <script src="script.js"></script>
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  
+  
+  
+  </head>
+  <body ng-app="productCatalogModule">
+   
+
+  <div class="container site-content">
+
+     <div ng-controller="mobilePhones">
+
+        <label class="lbl-phones">Phones:</label>  
+        <input type="text" placeholder="Search" ng-model="searchText">
+        <span  class="glyphicon glyphicon-search search-btn"></span>
+
+        <!-- <div class="info-box" style="height:100px; width:400px; background:#ccc;" > 
+            <label> index of row expanded:</label>  <p>  {{ rowExpandedIndexCurrent }}</p>
+            <label> Row Expanded:</label><p> {{ rowExpanded }} </p>
+        </div>  -->
+
+     <br> <br>
+      <table> 
+        <thead>
+          <tr>         
+            <th ng-click="sortDataBy('modelName')">Model
+              <div ng-class="getSortClass('modelName')"></div>
+            </th>
+            <th ng-click="sortDataBy('display')">Display
+              <div ng-class="getSortClass('display')"></div>
+            </th> 
+            <th ng-click="sortDataBy('os')">OS
+              <div ng-class="getSortClass('os')"></div>
+            </th> 
+            <th ng-click="sortDataBy('stock')">Stock
+              <div ng-class="getSortClass('stock')"></div>
+            </th>
+            <th ng-click="sortDataBy('monthly')">Monthly
+              <div ng-class="getSortClass('monthly')"></div>
+            </th>
+            <th ng-click="sortDataBy('oneTime')">One-time
+              <div ng-class="getSortClass('oneTime')"></div>
+            </th>
+            <th>    
+            </th>
+             
+          </tr> 
+        </thead>
+         <tbody>
+          <tr ng-repeat-start="phone in allPhones | orderBy:sortColumn:reverseSort | filter:searchText" ng-click="rowSelector($index)" ng-class="rowMarker($index)">  
+            <td class="clickable"> 
+                <span ng-if="rowExpandedIndexCurrent === $index" ng-class="rowExpandedBtn()"> </span>
+                <span ng-if="rowExpandedIndexCurrent !== $index" ng-class="rowCollapsedBtn()"> </span>
+              {{ phone.modelName }} 
+            </td>
+            <td> {{ phone.display }} </td>
+            <td> {{ phone.os  }} </td>
+            <td ng-if="inStock(phone.stock)"> {{ phone.stock }} </td>
+            <td ng-if="!inStock(phone.stock)" ng-class="outOfStock()">Out of Stock</td>
+            <td class="price-tag"> {{ phone.monthly }} € <span>/MO.</span></td>
+            <td class="price-tag"> {{ phone.oneTime | currency:""}} € </td>
+            <td class="btn-select"> <button type="button" class="btn btn-success btn-tbl-select">SELECT</button> </td>
+          </tr>
+          <tr ng-if="rowExpandedIndexCurrent === $index" ng-repeat-end="" ng-class="rowMarker($index)" id="bi-row">
+            <td colspan="7">
+              <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#basic-information">Basic Information</a></li>
+                <li><a data-toggle="tab" href="#">Technical Details</a></li>
+                <li><a data-toggle="tab" href="#">Images</a></li>
+                <li><a data-toggle="tab" href="#">Comments</a></li>
+              </ul>
+
+              <div class="tab-content">
+
+                <div id="basic-information" class="tab-pane fade in active details-pane">
+
+                  <div class="bi-image-container">
+                    <img ng-src="{{ phone.image }}">
+                  </div>
+
+                  <div class="bi-middle-pane">
+
+                    <div class="bi-item-model">
+                      <div> 
+                        <span class="bi-item-model-name"> {{ phone.modelFullName }}</span>
+                        <span class="bi-item-memory"> {{ phone.storage }}</span>
+                      </div>
+
+                      <p> 
+                        <span class="price-tag-ext"> Monthly </span> <span class="price-tag">{{ phone.monthly }} € </span><span style="color:#bbb;margin-right:20px;">/mo.</span>
+                        <span class="price-tag-ext">One-time </span><span class="price-tag"> {{ phone.oneTime }} € </span>
+                      </p>
+
+                    
+                    </div>  
+                    
+                    <div class="bi-model-description">
+                      <p class="detail-pane-title"> Description </p>
+                      <p class="description-highlight"> {{ phone.description.highlight }} </p>
+                      
+                      <div ng-class="descriptionMain">
+                        <p> {{ phone.description.mainText | limitTo:textLimit }} </p>
+                        <!-- <div ng-class="readMoreBlurr()"> 
+                          <button ng-if="readMoreExpanded===false" class="btn-readmore" type='button' ng-click="readMore()"> {{ readMoreBtnName }} </button>
+                          <button ng-if="readMoreExpanded===true" class="btn-readmore" type='button' ng-click="readMore()"> {{ readMoreBtnName }} </button>
+                        </div>  -->
+
+                        <div ng-if="readMoreExpanded===false" ng-class="className"> 
+                          <button  class="btn-readmore" type='button' ng-click="readMore()"> {{ readMoreBtnName }} </button>
+                        </div>  
+
+                        <div ng-if="readMoreExpanded===true" ng-class="className">        
+                          <button class="btn-readmore" type='button' ng-click="readMore()"> {{ readMoreBtnName }} </button>
+                        </div>            
+                        
+                      </div>
+                    
+                    </div>
+
+                  </div>  <!--/middle-pane -->
+
+                  <div class="bi-right-pane">
+                    <button type="button" class="btn btn-success btn-select">SELECT</button>
+                    <ul>
+                      <p class="detail-pane-title"> Quick Details </p> 
+                      <li ng-repeat="quickDetail in phone.quickDetails">
+                        <p> {{ quickDetail }} </p>
+                      </li>
+                    </ul>
+
+                    <ul class="stock-info">
+                      <p class="detail-pane-title"> Stock</p>
+                        <li>
+                            <p>Store <span>{{ phone.allStock.store }}</span> </p> 
+                        </li>
+                        <li>
+                            <p> Main warehouse  <span>{{ phone.allStock.mainWareHouse }}</span></p>
+                        </li>
+                        <li>
+                            <p>Other warehouse  <span>{{ phone.allStock.otherWareHouse }}</span></p>
+                        </li>
+
+                    </ul>
+
+                  </div>  <!-- /bi-right-pane -->         
+                </div>  <!-- /details-pane -->
+              </div>  <!-- /tab-content  -->
+            </td>
+          </tr>
+         
+         </tbody>        
+      </table>
+    </div>
+
+  </div> <!-- /container -->
+
+<footer> 
+
+</footer>  
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+
+
+  </body>
+</html>
