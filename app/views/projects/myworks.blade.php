@@ -5,6 +5,69 @@
 @section('content')	
    
  <div class="container projects-container"> 
+	
+
+
+	<div class="project2">
+		
+		<div class="mainText"> 
+			<h3 class="file-title">  Jylistys  </h3>
+			Made the website  <a href="http://www.jylistys.com" target=_blank>  www.jylistys.com  </a>  for jylistys' children project</div>
+
+		<div id="projectSlider2" class="carousel slide" data-ride="carousel" >
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+		    <li data-target="#projectSlider2" data-slide-to="0" class="active"></li>
+		    <li data-target="#projectSlider2" data-slide-to="1"></li>
+		    <li data-target="#projectSlider2" data-slide-to="2"></li>
+		    <li data-target="#projectSlider2" data-slide-to="3"></li>
+		  </ol>
+
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner" role="listbox">
+		  	<div class="item active"><img src="{{ URL::to('/images/jylistys/jyl1.png') }}" alt=""></div>
+			<div class="item"><img src="{{ URL::to('/images/jylistys/jyl2.png') }}" alt=""></div>
+			<div class="item"><img src="{{ URL::to('/images/jylistys/jyl3.png') }}" alt=""></div>
+			<div class="item"><img src="{{ URL::to('/images/jylistys/jyl4.png') }}" alt=""></div>
+			<div class="item"><img src="{{ URL::to('/images/jylistys/jyl5.png') }}" alt=""></div>
+			<div class="item"><img src="{{ URL::to('/images/jylistys/jyl6.png') }}" alt=""></div>
+
+			<!-- Left and right controls -->
+			<a class="left carousel-control" href="#projectSlider2" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		    	<span class="sr-only">Previous</span>
+		  	</a>
+		  	<a class="right carousel-control" href="#projectSlider2" role="button" data-slide="next">
+		    	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		    	<span class="sr-only">Next</span>
+		  	</a>
+		  </div>
+		</div> 
+	</div><!-- /  -->
+
+	<div class=" project3">
+		<div class="mainText">
+			<h3 class="file-title">  Hyvinvointivaltion vaalijat ry – HYVA </h3>
+			I added custom css and html code to change the entire look and feel of the site. Desined the logo,
+			added header slider, rebuit the main navigation menu and so on.
+		</div>
+
+		<div id="projectSlider3" class="carousel slide" data-ride="carousel" >
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+		    <li data-target="#projectSlider3" data-slide-to="0" class="active"></li>
+		  
+		  </ol>
+
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner" role="listbox">
+		  	<div class="item active"><img src="{{ URL::to('/images/project3-1.png') }}" alt=""></div>
+
+		  </div>
+		</div> 
+	</div><!-- /  -->
+
+
 	<div class="project1">
 		
 		<div class="mainText"> <h3 class="file-title">  Raisoft Oy Ltd. </h3>
@@ -41,64 +104,6 @@
 		    	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 		    	<span class="sr-only">Next</span>
 		  	</a>
-		  </div>
-		</div> 
-	</div><!-- /  -->
-
-	<div class="project2">
-		
-		<div class="mainText"> 
-			<h3 class="file-title">  Jylistys  </h3>
-			Made the website  <a href="http://www.jylistys.com" target=_blank>  www.jylistys.com  </a>  for jylistys' children project</div>
-
-		<div id="projectSlider2" class="carousel slide" data-ride="carousel" >
-		  <!-- Indicators -->
-		  <ol class="carousel-indicators">
-		    <li data-target="#projectSlider2" data-slide-to="0" class="active"></li>
-		    <li data-target="#projectSlider2" data-slide-to="1"></li>
-		    <li data-target="#projectSlider2" data-slide-to="2"></li>
-		    <li data-target="#projectSlider2" data-slide-to="3"></li>
-		  </ol>
-
-		  <!-- Wrapper for slides -->
-		  <div class="carousel-inner" role="listbox">
-		  	<div class="item active"><img src="{{ URL::to('/images/project2-1.png') }}" alt=""></div>
-			<div class="item"><img src="{{ URL::to('/images/project2-2.png') }}" alt=""></div>
-			<div class="item"><img src="{{ URL::to('/images/project2-3.png') }}" alt=""></div>
-			<div class="item"><img src="{{ URL::to('/images/project2-4.png') }}" alt=""></div>
-			<div class="item"><img src="{{ URL::to('/images/project2-5.png') }}" alt=""></div>
-
-			<!-- Left and right controls -->
-			<a class="left carousel-control" href="#projectSlider2" role="button" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-		    	<span class="sr-only">Previous</span>
-		  	</a>
-		  	<a class="right carousel-control" href="#projectSlider2" role="button" data-slide="next">
-		    	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-		    	<span class="sr-only">Next</span>
-		  	</a>
-		  </div>
-		</div> 
-	</div><!-- /  -->
-
-	<div class=" project3">
-		<div class="mainText">
-			<h3 class="file-title">  Hyvinvointivaltion vaalijat ry – HYVA </h3>
-			I added custom css and html code to change the entire look and feel of the site. Desined the logo,
-			added header slider, rebuit the main navigation menu and so on.
-		</div>
-
-		<div id="projectSlider3" class="carousel slide" data-ride="carousel" >
-		  <!-- Indicators -->
-		  <ol class="carousel-indicators">
-		    <li data-target="#projectSlider3" data-slide-to="0" class="active"></li>
-		  
-		  </ol>
-
-		  <!-- Wrapper for slides -->
-		  <div class="carousel-inner" role="listbox">
-		  	<div class="item active"><img src="{{ URL::to('/images/project3-1.png') }}" alt=""></div>
-
 		  </div>
 		</div> 
 	</div><!-- /  -->

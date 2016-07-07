@@ -401,6 +401,14 @@ div.contact-title {
   /*box-shadow: 1px 1px 1px 1px #ccc;*/
 }
 
+.article-blocks div.post-body { 
+    overflow: hidden;
+}
+
+.article-blocks div.post-body a { 
+   
+}
+
 .article-blocks:hover {
    /*border-top: 1px solid #9999FF; */
    box-shadow: 0 0 0 1px #8291ff;;
@@ -680,6 +688,7 @@ article.main-post-body-wrapper h2 {
 .post-body-main {
   background: #ffffff;
   padding:5px;
+  overflow: hidden;
 }
 
 
@@ -692,10 +701,12 @@ article.main-post-body-wrapper h2 {
   font-size: 1.4em;
   padding: 5px 10px;
   color: #404040;
+  overflow: hidden;
 }
 
 .post-body-main pre code{
   color: #004080;
+  overflow: scroll;
 }
 
 .col-md-4 {
