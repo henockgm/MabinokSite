@@ -38,9 +38,10 @@
 
 		</form> 
 
-		<article class="make-center">
-		 	<h2> <a class="post-title" href="{{ URL::action('post-delete', $post->slug) }}">{{ $post->title }}</a> </h2> 
-		 		 {{ Markdown::parse($post->body) }} 		
+		<article class="make-center main-post-body-wrapper">
+
+		 	<h2> <a class="post-title post-title-main" href="{{ URL::action('post-show', $post->slug) }}">{{ $post->title }}</a> </h2> 
+		 		<div class="post-body-main"> {{ Markdown::parse($post->body) }}  </div> 		
 		</article>
 	</div>
  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-->

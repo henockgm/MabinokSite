@@ -2,6 +2,7 @@
 
  class PostController extends BaseController 
  {
+
  	public function getShow($slug) 
  	{
  		$post = Post::where('slug', '=', $slug)->first();
@@ -116,7 +117,7 @@
 
             $post->draft = 0;
 
-          if($post->save()) return Redirect::route('home')->with('global', 'Your post is updated successfully'); 
+          if($post->save()) return Redirect::route('post-show', $post->slug)->with('global', 'Your post is updated successfully'); 
         }
   }
     

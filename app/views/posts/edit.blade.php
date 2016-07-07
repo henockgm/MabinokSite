@@ -6,7 +6,7 @@
 
        <div class="container alt1">
 			<form action=" {{ URL::action('post-edit-post', $post->id) }}" method="post" class="form-edit-post">
-		
+			{{  Form::Token() }}
 			 <div class="form-group">
 			 	<label for="edit_post_title"> Title: </label>
 			 	<input type="text" name="edit_post_title" class="form-control" value="{{ $post->title }}">
@@ -24,7 +24,7 @@
 			 </div>
 			  
 			 <button type="submit" class="btn btn-primary" class="form-control">Update post</button>
-			{{  Form::Token() }}
+			
 			
 			</form>
 </div>
