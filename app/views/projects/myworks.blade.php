@@ -2,15 +2,41 @@
 
 @section('title') Recent Projects @stop
 
-@section('content')	
-   
- <div class="container projects-container"> 
-	
+@section('content')
+
+ <div class="container projects-container">
+
+
+
+ <div class=" project4">
+		<div class="mainText">
+			<h3 class="file-title">   Product Catalog </h3>
+			I have designed and built this product catalog of phones with AngularJS framework.
+			 <a href="http://www.mabinok.com/product-list" target=_blank> product catalog </a>
+
+		</div>
+
+		<div id="projectSlider3" class="carousel slide" data-ride="carousel" >
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+		    <li data-target="#projectSlider3" data-slide-to="0" class="active"></li>
+
+		  </ol>
+
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner" role="listbox">
+		  	<div class="item active"><img src="{{ URL::to('/images/project4-1.png') }}" alt=""></div>
+
+		  </div>
+		</div>
+	</div><!-- /  -->
+
+
 
 
 	<div class="project2">
-		
-		<div class="mainText"> 
+
+		<div class="mainText">
 			<h3 class="file-title">  Jylistys  </h3>
 			Made the website  <a href="http://www.jylistys.com" target=_blank>  www.jylistys.com  </a>  for jylistys' children project</div>
 
@@ -42,7 +68,7 @@
 		    	<span class="sr-only">Next</span>
 		  	</a>
 		  </div>
-		</div> 
+		</div>
 	</div><!-- /  -->
 
 	<div class=" project3">
@@ -56,7 +82,7 @@
 		  <!-- Indicators -->
 		  <ol class="carousel-indicators">
 		    <li data-target="#projectSlider3" data-slide-to="0" class="active"></li>
-		  
+
 		  </ol>
 
 		  <!-- Wrapper for slides -->
@@ -64,16 +90,16 @@
 		  	<div class="item active"><img src="{{ URL::to('/images/project3-1.png') }}" alt=""></div>
 
 		  </div>
-		</div> 
+		</div>
 	</div><!-- /  -->
 
 
 	<div class="project1">
-		
+
 		<div class="mainText"> <h3 class="file-title">  Raisoft Oy Ltd. </h3>
-			During my work in Raisoft Oy I had been tasked to a plan, design and develop a software tool named 
+			During my work in Raisoft Oy I had been tasked to a plan, design and develop a software tool named
 			“Feature Editor” for the congiguration of feature sets of Raisoft's software products. The functionalities of the tool
-			included editing, adding,removing and mapping features in to a given version of product. I used CodGear Delphi development tool 
+			included editing, adding,removing and mapping features in to a given version of product. I used CodGear Delphi development tool
 			 and object pascal as programming language. Mercurial was used as revision-control tool.
 			I had also been working as a software tester for first few months of my work period in Raisoft. </div>
 
@@ -105,10 +131,10 @@
 		    	<span class="sr-only">Next</span>
 		  	</a>
 		  </div>
-		</div> 
+		</div>
 	</div><!-- /  -->
 
 
 </div>  <!--/container -->
-         
+
 @stop
