@@ -6,12 +6,12 @@ class HomeController extends BaseController {
 
 		return View::make('home', [
 
-			'posts' => Post::paginate(6)
+			'posts' => Post::orderBy('created_at', 'DESC')->paginate(6)
 		]);
 
 		//$posts = Post::where('draft', '=' ,  0)->get();
 		//return View::make('home')->with('posts', $posts);
-								
+
 	}
-	
+
 }

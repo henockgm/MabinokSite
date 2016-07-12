@@ -1,10 +1,10 @@
-<?php 
+<?php
 
 
 class Post extends Eloquent {
 
 
-protected $fillable = array('title', 'slug', 'draft', 'body');
+    protected $fillable = array('title', 'slug', 'draft', 'body');
 	/**
 	 * The database table used by the model.
 	 *
