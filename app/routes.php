@@ -90,14 +90,22 @@ Route::group(array('before' => 'auth'), function() {
         'uses' => 'AccountController@postChangePassword'
       ));
 
+      /*
+      * update avatar
+      */
+      Route::post('/profile', array(
+        'as' => 'update-avatar',
+        'uses' => 'UserController@updateAvatar'
+      ));
+
     });
 
 
     /*
-    *  admin routes here 
+    *  admin routes here
     */
     Route::group(array('prefix' => 'admins', 'before' => array('auth|admin')), function() {
-      
+
         /*
         / Delete Post (GET)
         */
@@ -130,19 +138,16 @@ Route::group(array('before' => 'auth'), function() {
           'uses' => 'PostController@postEdit'
         ]);
 
-        /*
-        / upload files  (GET)
-        */ 
-
-    //>>>>>>>
-      //   Route::get('/aplod/', array(
-      //     'as' => 'aplod-not-allowed',
-      //     'uses' => 'AplodController@getAplod'
-      // ));
-      
     });
 
-    
+
+    /*
+    /  profile
+    */
+    Route::get('/profile', array(
+      'as' => 'profile',
+      'uses' => 'UserController@userProfile'
+    ));
 
     /*
     /  show profile(GET)
@@ -185,8 +190,8 @@ Route::group(array('before' => 'auth'), function() {
       'uses' => 'PostController@postCreateBlogPost'
     ]);
 
-    
-    
+
+
 
 });
 
@@ -201,8 +206,8 @@ Route::group(array('before' => 'guest'), function() {
     /   CSRF protection group
    */
     Route::group(array('before' => 'csrf'), function() {
-    
-        /* 
+
+        /*
         /  Create account (POST)
         */
         Route::post('/account/create' , array(
@@ -210,7 +215,7 @@ Route::group(array('before' => 'guest'), function() {
      	    'uses' => 'AccountController@postCreate'
      	  ));
 
-        /* 
+        /*
         /  Sign In  (POST)
         */
         Route::post('/account/sign-in', array(
@@ -218,7 +223,7 @@ Route::group(array('before' => 'guest'), function() {
           'uses' => 'AccountController@postSignIn'
         ));
 
-        /* 
+        /*
        / Forgot password(POST)
        */
        Route::post('/account/forgot-password', array(
@@ -228,7 +233,7 @@ Route::group(array('before' => 'guest'), function() {
     });
 
 
-   /* 
+   /*
    / Forgot password(GET)
    */
    Route::get('/account/forgot-password', array(
@@ -244,7 +249,7 @@ Route::group(array('before' => 'guest'), function() {
     'uses' => 'AccountController@getRecover'
   ));
 
-  /* 
+  /*
   /  Sign In  (GET)
   */
     Route::get('/account/sign-in', array(
@@ -253,7 +258,7 @@ Route::group(array('before' => 'guest'), function() {
     ));
 
 
-    /* 
+    /*
     /  Create account (GET)
     */
     Route::get('/account/create' , array(
@@ -268,6 +273,6 @@ Route::group(array('before' => 'guest'), function() {
     Route::get('account/activate/{code}', array(
       'as' => 'account-activate',
       'uses' => 'AccountController@getActivate'
-    )); 
+    ));
 
 });
