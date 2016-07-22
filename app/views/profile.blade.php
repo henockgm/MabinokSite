@@ -12,7 +12,7 @@
                 <h2>{{  $user->username }} 's  Profile </h2>
                 <h3> Details</h3>
                 <h5> Email: {{ $user->email }}</h5>
-                <form enctype="multipart/form-data" action="/profile" method="POST">
+                <form enctype="multipart/form-data" action="{{ URL::route('update-avatar') }}" method="POST">
                     <label> Update profile image </label>
                     <input type="file" name="avatar">
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
