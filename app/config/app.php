@@ -120,7 +120,8 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 
-		'MaxHoffmann\Parsedown\ParsedownServiceProvider'
+		'MaxHoffmann\Parsedown\ParsedownServiceProvider',
+		'Intervention\Image\ImageServiceProvider',
 
 	),
 
@@ -188,6 +189,7 @@ return array(
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
 		'Markdown'        => 'MaxHoffmann\Parsedown\ParsedownFacade',
+		'Image'			  => 'Intervention\Image\Facades\Image',
 
 	),
 
