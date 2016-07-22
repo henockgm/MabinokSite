@@ -21,8 +21,8 @@ body, html {
 }
 
 
- /*nav.navbar  ul  li a:hover  { 
-  background: orange; 
+ /*nav.navbar  ul  li a:hover  {
+  background: orange;
   color:#green;
 }*/
 
@@ -51,11 +51,11 @@ nav.primary-nav, footer {
  .navbar-header {
   /*height: 75px;*/
   margin-right: 50px;
-} 
+}
 
 .navbar-top {
   padding-top: 10px;
-  
+
 }
 
 div.navbar-header:active {
@@ -63,7 +63,7 @@ div.navbar-header:active {
 }
 
 div.error-display {
-  color: red; 
+  color: red;
 }
 
 
@@ -118,7 +118,7 @@ ul > li > a {
 }
 
 /* dropdown background color*/
-.dropdown .dropdown-menu {  
+.dropdown .dropdown-menu {
     border-top : solid 2px #b3b3ff;
     background: rgba(0,0,0,0.7);
 }
@@ -126,7 +126,7 @@ ul > li > a {
 /* dropdown menu item hover color*/
 ul.navbar-top li.dropdown ul li a:hover  {
   background: #b3b3ff;
-  color: #fff;  
+  color: #fff;
 }
 
 ul.navbar-top  li > a > span.glyphicon {
@@ -137,7 +137,7 @@ ul.navbar-top  li > a > span.glyphicon {
 
  /* dropdown font color*/
 ul.navbar-top li.dropdown ul li a  {
-  color: #ccccff;  
+  color: #ccccff;
   font-weight: 700;
 }
 
@@ -182,7 +182,7 @@ button.navbar-toggle.custom:hover {
 
 
 .icon-bar.custom:before {
-    
+
 }
 
 button.navbar-toggle.custom:hover  .icon-bar.custom{
@@ -201,7 +201,7 @@ button.navbar-toggle.custom:hover  .icon-bar.custom{
 
 
  /*************** contact page **********/
-.contact-header { 
+.contact-header {
    font-family: 'Lato';
    color: #B0BEC5;
    /*color: green;*/
@@ -217,9 +217,9 @@ div.contact-title {
 
 .contact-info {
   font-family: monospace;
-  display: block; 
+  display: block;
   margin-left: 40%;
-  color: #888; 
+  color: #888;
 }
 
 .contact-info>span{
@@ -227,10 +227,10 @@ div.contact-title {
    color: #B0BEC5;
 }
 
-.contact-me {  
+.contact-me {
     width: 100%;
     min-height: 200px;
-    
+
 }
 
 .contact-me>div{
@@ -238,19 +238,19 @@ div.contact-title {
   float: left;
 }
 
-.contact-me-img {  
+.contact-me-img {
     width: 35%;
     height: 200px;
     padding-top: 40px;
     padding-right: 25px;
-    
+
 }
 
-.contact-me-img img {  
+.contact-me-img img {
    float: right;
 }
 
-.contact-me-desc{  
+.contact-me-desc{
     width: 65%;
     height: 200px;
     padding: 15px;
@@ -261,7 +261,7 @@ div.contact-title {
 
 
 /*#test1 p {
-    
+
     margin-top: 25px;
     font-size: 21px;
     text-align: center;
@@ -371,9 +371,9 @@ div.contact-title {
   justify-content: center;
   margin-bottom: 50px;
 }
- 
+
 .posts-row {
-  
+
   margin: 0 auto;
   padding: 0;
   height: 250px;
@@ -384,11 +384,11 @@ div.contact-title {
     margin-right: auto;
     width: 74%;
     margin-top: 30px;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
 }
 
 
-.article-blocks { 
+.article-blocks {
   display: inline-block;
   width: 220px;
   height: 250px;
@@ -401,12 +401,12 @@ div.contact-title {
   /*box-shadow: 1px 1px 1px 1px #ccc;*/
 }
 
-.article-blocks div.post-body { 
+.article-blocks div.post-body {
     overflow: hidden;
 }
 
-.article-blocks div.post-body a { 
-   
+.article-blocks div.post-body a {
+
 }
 
 .article-blocks:hover {
@@ -428,7 +428,7 @@ p.published-on {
 
 
 .post-title {
-  margin-top: 10px; 
+  margin-top: 10px;
   font-size: 1.0em;
   text-decoration: none;
   pointer-events: none;
@@ -451,8 +451,8 @@ p.published-on {
 .read-more {
   color: #5f5bec;
   /*position: absolute;*/
-  
-  padding-left: 5px; 
+
+  padding-left: 5px;
 }
 
 /*.article-blocks>div{
@@ -505,10 +505,10 @@ p.published-on {
 }
 
 .post-manip.btns {
-  
+
 }
 
-.form-edit-post { 
+.form-edit-post {
   width: 700px;
 }
 
@@ -575,7 +575,7 @@ button.btn-login, button.btn-account-create {
 /*****************   FOOOTER  ************************************/
 
 
-footer{ 
+footer{
   min-height: 400px;
 }
 
@@ -643,7 +643,7 @@ ul.socialmedialinks {
 .tw-custom, .fb-custom, .gp-custom, .in-custom, .ln-custom {
   color: #538cc6;
 }
- 
+
 .socialmedialinks li a:hover i {
  color: rgb(242, 247, 244);
 }
@@ -755,7 +755,7 @@ article.main-post-body-wrapper h2 {
   bottom: 0;
   right: 0;
   position: absolute;
-  z-index: -1;   
+  z-index: -1;
 }
 
 
@@ -767,19 +767,19 @@ article.main-post-body-wrapper h2 {
 
 /*******************  EXTRA SETTINGS ************************************/
 /*
-  .primary-nav .navbar-top > .open > a, 
-  .primary-nav .navbar-top > .open > a:hover, 
+  .primary-nav .navbar-top > .open > a,
+  .primary-nav .navbar-top > .open > a:hover,
   .primary-nav .navbar-top > .open > a:focus  {
-    
+
     background-color: transparent;
    }*/
 
-   
 
-   
+
+
    .primary-nav .navbar-top > li .nav-item {
     padding-top: 20px;
-   } 
+   }
 
   .dropdown-menu .divider {
     background-color: #888;
@@ -904,12 +904,12 @@ article.main-post-body-wrapper h2 {
 
  div.mainText {
   display: block;
-  font-size: 1.1em !important; 
+  font-size: 1.1em !important;
   font-weight: 400;
   line-height: 2.0em;
   margin: 0 auto;
   width: 70%;
-  padding: 20px 50px; 
+  padding: 20px 50px;
   background: #fff;
   color: #404040;
 }
@@ -936,12 +936,12 @@ p.greetings {
   background: #fff !important;
 }
 
-.carousel-control.left, 
+.carousel-control.left,
 .carousel-control.right {
-    background-image: none !important; 
+    background-image: none !important;
 }
 
-/*.carousel-inner > .item > img{  
+/*.carousel-inner > .item > img{
    height:400px !important;
    margin: 0 auto;
    width: 70%;
@@ -997,17 +997,17 @@ div.panels form {
 @media screen and (min-width: 1000px) and (max-width: 1340px) {
    iframe.pdf-holder {
     width: 900px;
-    height: 1000px;  
+    height: 1000px;
    }
 
-   
+
 }
 
 
 @media only screen and (min-width: 768px) and (max-width: 999px) {
    iframe.pdf-holder {
     width: 760px;
-    height: 900px;  
+    height: 900px;
    }
 
    .cv-holder{
@@ -1018,8 +1018,8 @@ div.panels form {
    }
 
    div.mainText {
-      margin: 0 auto; 
-      width: 100%;   
+      margin: 0 auto;
+      width: 100%;
       padding: 10px 10px;
    }
 
@@ -1028,7 +1028,7 @@ div.panels form {
    }
 
   .c-hamburger.c-hamburger--htx{
-      display: none;   
+      display: none;
    }
 
 
@@ -1037,8 +1037,8 @@ div.panels form {
 @media only screen and (min-width: 480px) and (max-width: 767px) {
    iframe.pdf-holder {
     width: 470px;
-    height: 600px;  
-   } 
+    height: 600px;
+   }
 
    .cv-holder{
     margin: 0;
@@ -1047,8 +1047,8 @@ div.panels form {
    }
 
    div.mainText {
-      margin: 0 auto; 
-      width: 100%;   
+      margin: 0 auto;
+      width: 100%;
       padding: 10px 10px;
 
    }
@@ -1060,7 +1060,7 @@ div.panels form {
    div.panels {
     width: 90%;
   }
- 
+
 }
 
 
@@ -1075,7 +1075,7 @@ div.panels form {
    iframe.pdf-holder {
     margin: 0;
     width: 360px;
-    height: 500px;  
+    height: 500px;
     text-align: center;
    }
 
@@ -1086,7 +1086,7 @@ div.panels form {
     overflow: scroll;
    }
 
- 
+
 }
 
 
@@ -1102,7 +1102,7 @@ div.panels form {
    iframe.pdf-holder {
     margin: 0;
     width: 360px;
-    height: 450px;  
+    height: 450px;
     text-align: center;
 
    }
@@ -1118,10 +1118,10 @@ div.panels form {
 
 
 @media only screen and (min-width: 960px) {
-   
-   .carousel-inner > .item > img{  
+
+   .carousel-inner > .item > img{
       height: auto !important;
-      margin: 0 auto;  
+      margin: 0 auto;
       width: 70%;
    }
 
@@ -1141,7 +1141,7 @@ div.panels form {
 
     iframe.pdf-holder {
       width: 190px;
-      height: 300px;  
+      height: 300px;
       text-align: center;
    }
 
@@ -1153,7 +1153,7 @@ div.panels form {
 }
 
 
-@media screen and (max-width: 1000px) {  
+@media screen and (max-width: 1000px) {
    .navbar-top {
     /*display: none;*/
    }
@@ -1177,11 +1177,11 @@ div.panels form {
 
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
         color: #fff;
-        font-weight:  500;     
+        font-weight:  500;
     }
 
     /* .navbar-default .navbar-nav .open .dropdown-menu > li:hover > a {
-        color: orange;   
+        color: orange;
     }*/
 
    .sm-links-block {
@@ -1244,6 +1244,10 @@ div.panels form {
       font-size: 2em;
    }
 
+    .center {
+    width: 90%;
+   }
+
 }
 
 @media screen and (max-width: 479px) {
@@ -1273,7 +1277,11 @@ div.panels form {
     margin-left: 0;
     margin-right: 0;
   }
-  
+
+  .center {
+    width: 98%;
+}
+
 }
 
 

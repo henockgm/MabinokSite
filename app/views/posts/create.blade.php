@@ -5,15 +5,15 @@
 @section('content')
 
 
- 
+
  <div class="container alt1">
    	<div class="panel center panel-create-post">
-   		<div class="panel-heading panel-create-post-heading"> 
+   		<div class="panel-heading panel-create-post-heading">
    			<h3 class="panel-title"> Got something intersting? Post it! </h3>
    		</div>
    		<div class="panel-body">
 			<form action=" {{ URL::route('post-create-blog-post') }}" method="post" class="form-create-post">
-		
+
 			 <div class="form-group">
 			 	<label for="blog_post_title"> Title: </label>
 			 	<input type="text" name="blog_post_title" class="form-control" value={{ Input::old('blog_post_title') ? e(Input::old('blog_post_title')) : '' }}>
@@ -29,15 +29,15 @@
 			 		<p class="error-disp"> * {{ $errors->first('blog_post_body') }}</p>
 			 	@endif
 			 </div>
-			  
+
 			 <button type="submit" class="btn btn-primary" class="form-control">Create your post</button>
 			{{  Form::Token() }}
-			
+
 			</form>
 
    		</div>
-   	</div>	
-		
+   	</div>
+
 </div>
 
 @stop
