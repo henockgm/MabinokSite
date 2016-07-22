@@ -46,12 +46,14 @@
 
            <!--  <li class="main-nav"> <a href="#" class="nav-item"> </a> </li> -->
             <li class="dropdown main-nav">
-              <a class="dropdown-toggle nav-item" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-cog"></span>{{ Auth::user()->username }}<span class="caret"></span> </a>
+              <a class="dropdown-toggle nav-item" data-toggle="dropdown" href="#" role="button" aria-expanded="false" style="position:relative; padding-left:50px;">
+              <img src="{{ URL::to('/uploads/avatars/' . Auth::user()->avatar)  }}" style="width:35px; height:35px; position:absolute; top:10px; left:10px; border-radius: 50%;">
+              <span class="glyphicon glyphicon-cog" ></span>{{ Auth::user()->username }}<span class="caret"></span> </a>
               <ul class="dropdown-menu" role="menu">
                <li> <a href="{{ URL::route('profile')}}"> <i class="glyphicon glyphicon-user"></i> Profile </a> </li>
-                <li> <a href="{{ URL::route('account-change-password')  }}"> Change password </a> </li>
+                <li> <a href="{{ URL::route('account-change-password')  }}"> <i class="glyphicon glyphicon-lock"> </i> Change password</a> </li>
                 @if(Auth::user()->isAdmin())
-                <li> <a href="#"> upload </a> </li>
+
                 @else
                    <li> <a href="#"> upload </a> </li>
                 @endif
