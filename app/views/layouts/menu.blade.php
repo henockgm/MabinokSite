@@ -55,7 +55,7 @@
                 @if(Auth::user()->isAdmin())
 
                 @else
-                   <li> <a href="#"> upload </a> </li>
+
                 @endif
               </ul>
             </li >

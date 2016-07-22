@@ -15,6 +15,9 @@
                 <form enctype="multipart/form-data" action="{{ URL::route('update-avatar') }}" method="POST">
                     <label> Update profile image </label>
                     <input type="file" name="avatar">
+                    @if($errors->has('avatar'))
+                        <p class="error-disp"> *  {{ $errors->first('avatar') }}</p>
+                    @endif
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <input type="submit" name="" value="upload" class="pull-right btn-sm btn-primary">
                 </form>

@@ -24,9 +24,8 @@ class UserController extends BaseController {
         );
 
         if($validator->fails()) {
-            return Redirect::route('profile')
-                ->withErrors($validator)
-                ->withInput();
+            return Redirect::route('profile')->withErrors($validator)->withInput();
+
         } else {
 
             if(Input::hasFile('avatar')) {
