@@ -77,6 +77,23 @@ Route::get('/post/{id}',  [
 */
 Route::group(array('before' => 'auth'), function() {
 
+   /*
+    / Create Post (GET)
+    */
+    Route::get('/posts/create', [
+      'as' => 'create-blog-post',
+      'uses' => 'PostController@getCreateBlogPost'
+    ]);
+
+    /*
+    / Create Post (POST)
+    */
+    Route::post('/posts/create', [
+      'as' => 'post-create-blog-post',
+      'uses' => 'PostController@postCreateBlogPost'
+    ]);
+
+
     /*
     /   CSRF protection group
    */
@@ -105,6 +122,8 @@ Route::group(array('before' => 'auth'), function() {
         'as' => 'post-comment',
         'uses' => 'PostController@insertComment'
       ]);
+
+
 
     });
 
@@ -182,21 +201,7 @@ Route::group(array('before' => 'auth'), function() {
       'uses' => 'AccountController@getSignOut'
     ));
 
-    /*
-    / Create Post (GET)
-    */
-    Route::get('/posts/create', [
-      'as' => 'create-blog-post',
-      'uses' => 'PostController@getCreateBlogPost'
-    ]);
 
-    /*
-    / Create Post (POST)
-    */
-    Route::post('/posts/create', [
-      'as' => 'post-create-blog-post',
-      'uses' => 'PostController@postCreateBlogPost'
-    ]);
 
 
 

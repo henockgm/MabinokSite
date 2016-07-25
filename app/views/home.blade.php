@@ -4,9 +4,9 @@
 
 @section('content')
 	<div class="container home-container alt1">
-		@if(Auth::check())
-			<div class="create-post" > <a href="{{ URL::route('create-blog-post') }}" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-pencil"></span> Create a Post</a> </div>
-		@endif
+
+			<div class="create-post" > <a href="{{ URL::route('create-blog-post') }}" class="btn btn-primary btn"><span class="glyphicon glyphicon-pencil"></span> Create a Post</a> </div>
+
 
        <!--  <div class="home-posts-wrapper"> posts-wrapper -->
 
