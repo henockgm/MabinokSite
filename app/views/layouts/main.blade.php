@@ -2,9 +2,9 @@
 <html>
 	<head>
 		<title> @yield('title')| Mabinok </title>
-	
+
     {{ HTML::style('css/social-sharing.css') }}
-		<meta charset="UTF-8">	    
+		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="apple-touch-startup-image" href="http://mabinok.com/public/images/ios_startup-6@2x.png" sizes="750x1294">
     {{ HTML::style('css/bootstrap.css') }}
@@ -12,24 +12,24 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
     {{ HTML::style('css/blueimp-gallery.min.css') }}
 
-                 
+
 	</head>
 	<body>
 
     @include('layouts.header_slider')
 		@include('layouts.menu')
-        
-		<div class="container"> 
+
+		<div class="container">
 			@if(Session::has('global'))
-			<div class="alert alert-success"> {{ Session::get('global') }} 
+			<div class="alert alert-success"> {{ Session::get('global') }}
    				<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-			</div> 
+			</div>
 			@endif
 		</div>
 		<!-- @include('layouts.navigation') -->
 
 		@yield('content')
-       
+
            <!-- footer -->
 
 		<div class="alt2">
@@ -38,7 +38,7 @@
 					<p class="copy-right"><span class="glyphicon glyphicon-copyright-mark"></span> mabinok.com 2016 </p>
 			 		@include('footers.flinks')
 			 		 @include('contact.contactus')
-			 					 		 		
+
 				</footer>
 			<!-- </div> -->
 		</div>
@@ -80,21 +80,21 @@
 <script>
 
 // Add slideup & fadein animation to dropdown
-   $('.dropdown').on('show.bs.dropdown', function(e){
-      var $dropdown = $(this).find('.dropdown-menu');
-      var orig_margin_top = parseInt($dropdown.css('margin-top'));
-      $dropdown.css({'margin-top': (orig_margin_top + 10) + 'px', opacity: 0}).animate({'margin-top': orig_margin_top + 'px', opacity: 1}, 300, function(){
-         $(this).css({'margin-top':''});
-      });
-   });
-   // Add slidedown & fadeout animation to dropdown
-   $('.dropdown').on('hide.bs.dropdown', function(e){
-      var $dropdown = $(this).find('.dropdown-menu');
-      var orig_margin_top = parseInt($dropdown.css('margin-top'));
-      $dropdown.css({'margin-top': orig_margin_top + 'px', opacity: 1, display: 'block'}).animate({'margin-top': (orig_margin_top + 10) + 'px', opacity: 0}, 300, function(){
-         $(this).css({'margin-top':'', display:''});
-      });
-   });
+   // $('.dropdown').on('show.bs.dropdown', function(e){
+   //    var $dropdown = $(this).find('.dropdown-menu');
+   //    var orig_margin_top = parseInt($dropdown.css('margin-top'));
+   //    $dropdown.css({'margin-top': (orig_margin_top + 10) + 'px', opacity: 0}).animate({'margin-top': orig_margin_top + 'px', opacity: 1}, 300, function(){
+   //       $(this).css({'margin-top':''});
+   //    });
+   // });
+   // // Add slidedown & fadeout animation to dropdown
+   // $('.dropdown').on('hide.bs.dropdown', function(e){
+   //    var $dropdown = $(this).find('.dropdown-menu');
+   //    var orig_margin_top = parseInt($dropdown.css('margin-top'));
+   //    $dropdown.css({'margin-top': orig_margin_top + 'px', opacity: 1, display: 'block'}).animate({'margin-top': (orig_margin_top + 10) + 'px', opacity: 0}, 300, function(){
+   //       $(this).css({'margin-top':'', display:''});
+   //    });
+   // });
 
 </script>
 
@@ -107,6 +107,12 @@
 
   // ga('create', 'UA-67472059-2', 'auto');
   // ga('send', 'pageview');
+</script>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
 </script>
 
 

@@ -63,7 +63,7 @@ Route::get('/portfolio/cover', array(
 
 //**********************************************************
 
-Route::get('/post/{slug}',  [
+Route::get('/post/{id}',  [
   'as' => 'post-show',
   'uses' => 'PostController@getShow'
 ]);
@@ -97,6 +97,14 @@ Route::group(array('before' => 'auth'), function() {
         'as' => 'update-avatar',
         'uses' => 'UserController@updateAvatar'
       ));
+
+       /*
+      / insert new comment for a post
+      */
+      Route::post('/post/{id}',  [
+        'as' => 'post-comment',
+        'uses' => 'PostController@insertComment'
+      ]);
 
     });
 

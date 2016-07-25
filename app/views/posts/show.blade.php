@@ -8,17 +8,60 @@
 	 <div class="container alt1">
 
 			<a href="{{ URL::previous() }}"> <i class="fa fa-xlg fa-arrow-circle-left" aria-hidden="true" style="font-size: 44px;"></i> </a>
-			@if(Auth::check()) 
+			@if(Auth::check())
 	            <div class="post-manip">
 	                <p data-placement="top" data-toggle="tooltip" title="Delete"><a href="{{ URL::action('post-delete', $post->slug) }}" class="btn  btn-xs post-manip-btns"><span class="glyphicon glyphicon-trash"></span></a></p>
-	                
+
 	                <p data-placement="top" data-toggle="tooltip" title="Edit"><a href="{{ URL::action('post-edit', $post->slug) }}" class="btn  btn-xs post-manip-btns"><span class="glyphicon glyphicon-pencil"></span></a></p>
 	            </div>
 	            @endif
-		 <article class="make-center main-post-body-wrapper">
 
-		 	<h2> <a class="post-title post-title-main" href="{{ URL::action('post-show', $post->slug) }}">{{ $post->title }}</a> </h2> 
-		 		<div class="post-body-main"> {{ Markdown::parse($post->body) }}  </div> 		
+		 <article class="main-post-body-wrapper">
+		 	<h2> <a class="post-title post-title-main" href="{{ URL::action('post-show', $post->id) }}">{{ $post->title }}</a> </h2>
+		 		<div class="post-body-main"> {{ Markdown::parse($post->body) }}  </div>
 		</article>
+
+
+		@if($comments = Post::find($post->id)->comments)
+          <div class="comments-wrapper">
+            @foreach ($comments as $comment)
+                <section class="comment-block">
+	                <div class="post-comment-author">
+                        <div class="author-image">
+                        	<img src="{{ URL::to('/uploads/avatars/' . User::find($comment->user_id)->avatar)  }}">
+                        </div>
+
+                        <div class="comment-posted-by">Posted by {{ User::find($comment->user_id)->username }} </div>
+                        <div class="comment-posted-on"> {{ $comment->created_at->diffForHumans() }} </div>
+	                </div>
+	                <div class="post-comment-body">
+	                     {{ Markdown::parse($comment->message) }}
+	                </div>
+                </section>
+
+            @endforeach
+
+            </div>
+         @endif
+
+
+
+        <div class="comment-input">
+	        <form action=" {{ URL::route('post-comment', $post->id) }}" method="post">
+	            <div class="form-group">
+	                <label for="blog_post_comment"> post Your comment: </label>
+	                <textarea name="blog_post_comment" class="form-control" rows="12" >{{ Input::old('blog_post_comment') ? e(Input::old('blog_post_comment')) : '' }}</textarea>
+	                @if($errors->has('blog_post_comment'))
+	                    <p class="error-disp"> * {{ $errors->first('blog_post_comment') }}</p>
+	                @endif
+	             </div>
+
+	             <button type="submit" class="btn btn-primary" class="form-control">Submit your comment</button>
+	            {{  Form::Token() }}
+
+	        </form>
+        </div>
+
+
 	</div>
 @stop

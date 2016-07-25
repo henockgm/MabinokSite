@@ -12,12 +12,14 @@
                 <h2>{{  $user->username }} 's  Profile </h2>
                 <h3> Details</h3>
                 <h5> Email: {{ $user->email }}</h5>
-                <form enctype="multipart/form-data" action="{{ URL::route('update-avatar') }}" method="POST">
+                <form class="upload-profile-image-form" enctype="multipart/form-data" action="{{ URL::route('update-avatar') }}" method="POST">
                     <label> Update profile image </label>
+                    <a class="image-upload-info btn" href="#" data-toggle="tooltip" data-placement="right" title="upload square type image for best view. eg. 500X500px or 700X700px with max size = 2M"> info </a>
                     <input type="file" name="avatar">
                     @if($errors->has('avatar'))
                         <p class="error-disp"> *  {{ $errors->first('avatar') }}</p>
                     @endif
+
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <input type="submit" name="" value="upload" class="pull-right btn-sm btn-primary">
                 </form>
@@ -25,6 +27,8 @@
         </div>
 
     </div>
+
+
 
 
 
