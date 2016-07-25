@@ -550,8 +550,14 @@ div.login-panel div.panel-heading {
 }
 
 button.btn-login, button.btn-account-create {
-  background: rgb(159, 175, 198);
+  background: #4080bf;
   color: #fff;
+}
+
+button.btn-login:hover, button.btn-account-create:hover {
+  border: 1px solid #4080bf !important;
+  color: #4080bf !important;
+  background: #fff !important;
 }
 
 /**********************  Panels setting *****************************/

@@ -7,8 +7,8 @@
 
 	<div class="container alt1">
 		<div class="login-panel panel panels">
-		 	<div class="panel-heading">  
-                <h3 class="panel-title">Sign In</h3>  
+		 	<div class="panel-heading">
+                <h3 class="panel-title">Sign In</h3>
             </div>
             <div class="panel-body">
 
@@ -23,13 +23,13 @@
 						@if($errors->has('email'))
 							<p class="error-disp"> * {{ $errors->first('email') }}</p>
 						@endif
-					</div> 
+					</div>
 				</div>
 
 				<div class="form-group">
 					<label for="password" class="col-md-4 control-label">Password</label>
 					<div class="col-md-6">
-						<input type="password" class="form-control" name="password"> 
+						<input type="password" class="form-control" name="password">
 						@if($errors->has('password'))
 							<p class="error-disp"> *{{ $errors->first('password') }} </p>
 						@endif
@@ -38,29 +38,29 @@
 
 				<div class="form-group">
 					<div class="col-md-6 col-md-offset-4">
-						<div class="checkbox">			 			
-				 			<label>  
+						<div class="checkbox">
+				 			<label>
 								<input type="checkbox" name="remember" id="remember">
-								Remember me 
+								Remember me
 				 			</label>
-				 		</div> 
+				 		</div>
 			 		</div>
 				</div>
-                
-                <div class="form-group"> 
-	                <div class="col-md-6 col-md-offset-4"> 
-						<button type="submit" class="btn btn-primary">
+
+                <div class="form-group">
+	                <div class="col-md-6 col-md-offset-4">
+						<button type="submit" class="btn btn-login">
 	                    	<i class="fa fa-btn fa-sign-in"> </i> Login
 						</button>
 
 						<a href="{{ URL::route('account-forgot-password-post') }}"> Forgot password?</a>
 				 	</div>
 			 	</div>
-			 	
+
 			 </form>
 		 </div>
-		</div>	
+		</div>
  	</div>
 
- 
+
 @stop
