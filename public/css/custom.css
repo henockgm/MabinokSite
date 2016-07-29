@@ -417,7 +417,7 @@ div.home-post-title{
 }
 
 div.home-post-title a {
-  color: rgba(96, 115, 159, 0.8);
+  color: rgba(96, 115, 159, 1.0);
   font-size: 1.6em;
   text-decoration: none;
 }
