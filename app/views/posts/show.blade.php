@@ -51,7 +51,7 @@
 	        <form action=" {{ URL::route('post-comment', $post->id) }}" method="post">
 	            <div class="form-group">
 	                <label for="blog_post_comment"> post Your comment: </label>
-	                <textarea name="blog_post_comment" class="form-control" rows="12" >{{ Input::old('blog_post_comment') ? e(Input::old('blog_post_comment')) : '' }}</textarea>
+	                <textarea name="blog_post_comment" class="form-control" >{{ Input::old('blog_post_comment') ? e(Input::old('blog_post_comment')) : '' }}</textarea>
 	                @if($errors->has('blog_post_comment'))
 	                    <p class="error-disp"> * {{ $errors->first('blog_post_comment') }}</p>
 	                @endif
