@@ -81,7 +81,6 @@
          					));
             if($post) return Redirect::route('home')->with('global', 'You posted successfully');
         }
-
  	}
 
   /*
@@ -141,7 +140,7 @@
 
             $post->draft = 0;
 
-          if($post->save()) return Redirect::route('post-show', $post->slug)->with('global', 'Your post is updated successfully');
+          if($post->save()) return Redirect::route('post-show', $post->id)->with('global', 'Your post is updated successfully');
         }
   }
 
@@ -179,7 +178,6 @@
     }
 
   } // end of method
-
 
 
 

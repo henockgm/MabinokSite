@@ -12,9 +12,10 @@
 		<div class="mainText">
 			<h3 class="file-title">   Product Catalog </h3>
 			I have designed and built this product catalog of phones with AngularJS framework.
-			 <a href="http://www.mabinok.com/product-list" target=_blank> product catalog </a>
 
+           <hr>
 		</div>
+		<a href="http://www.mabinok.com/product-list" target=_blank>
 
 		<div id="projectSlider3" class="carousel slide" data-ride="carousel" >
 		  <!-- Indicators -->
@@ -28,7 +29,8 @@
 		  	<div class="item active"><img src="{{ URL::to('/images/project4-1.png') }}" alt=""></div>
 
 		  </div>
-		</div>
+		 </div>
+		</a>
 	</div><!-- /  -->
 
 
@@ -38,7 +40,9 @@
 
 		<div class="mainText">
 			<h3 class="file-title">  Jylistys  </h3>
-			Made the website  <a href="http://www.jylistys.com" target=_blank>  www.jylistys.com  </a>  for jylistys' children project</div>
+			Made the website  <a href="http://www.jylistys.com" target=_blank>  www.jylistys.com  </a>  for jylistys' children project.
+			<hr>
+	 </div>
 
 		<div id="projectSlider2" class="carousel slide" data-ride="carousel" >
 		  <!-- Indicators -->

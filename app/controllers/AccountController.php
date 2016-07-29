@@ -2,12 +2,12 @@
 
 class AccountController extends BaseController {
 
-	public function getSignIn() { 
+	public function getSignIn() {
 		return View::make('account.signin');
 	}
 
 	public function postSignIn() {
-		$validator = Validator::make(Input::all(), 
+		$validator = Validator::make(Input::all(),
 			array(
 
 				'email' 	=> 'required|email',
@@ -22,7 +22,7 @@ class AccountController extends BaseController {
 		} else {
 
 			$remember = (Input::has('remember')) ? true : false;
- 
+
 			// attemp sign in user
 			$auth = Auth::attempt(array(
 				'email' 	=> Input::get('email'),
@@ -58,7 +58,7 @@ class AccountController extends BaseController {
 	public function postCreate() {
 		$validator = Validator::make(Input::all(),
 			array(
-				
+
 				'email' 			=> 'required|max:50|email|unique:users',
 				'username' 			=> 'required|max:20|min:3|unique:users',
 				'password'      	=> 'required|min:6',
@@ -66,7 +66,7 @@ class AccountController extends BaseController {
 
 			)
 		);
-		
+
 		if($validator->fails()) {
 			return Redirect::route('account-create')
 				->withErrors($validator)
@@ -77,7 +77,7 @@ class AccountController extends BaseController {
 			$username 	= Input::get('username');
 			$password 	= Input::get('password');
 
-			// Activation code 
+			// Activation code
 			$code   = str_random(60);
 
 			$user = User::create(array(
@@ -96,11 +96,11 @@ class AccountController extends BaseController {
 						->with('global', 'Congrates! Your account has been created, an email is sent to you with account activattion link.');
 
 			}
-		} 
+		}
 	}
 
-	public function getActivate($code) {		
-	  
+	public function getActivate($code) {
+
 	  $user = User::where('code', '=', $code)->where('active', '=', 0);
 
 	  if($user->count()) {
@@ -118,7 +118,7 @@ class AccountController extends BaseController {
 
 	  	return Redirect::route('home')
 	  			->with('global', 'We could not activate your account.Try again later.');
-	  
+
 	}
 
 	public function getChangePassword() {
@@ -129,11 +129,11 @@ class AccountController extends BaseController {
 
 	public function postChangePassword() {
 
-		$validator = Validator::make(Input::all(), 
+		$validator = Validator::make(Input::all(),
 			array(
 				'old_password' 		=> 'required',
 				'password' 			=> 'required|min:6',
-				'password_again' 	=> 'required|same:password'	
+				'password_again' 	=> 'required|same:password'
 			)
 		);
 
@@ -152,8 +152,8 @@ class AccountController extends BaseController {
 
 					if($user->save()) {
 						return Redirect::route('home')
-							->with('global', 'Your password has been changed successfully!');				
-					} 
+							->with('global', 'Your password has been changed successfully!');
+					}
 			} else {
 				return Redirect::route('account-change-password')
 					->with('global', 'Your old passowrd is incorrent.');
@@ -171,8 +171,8 @@ class AccountController extends BaseController {
 	}
 
 	public function postForgotPassword() {
-		
-		$validator = Validator::make(Input::all(), 
+
+		$validator = Validator::make(Input::all(),
 			array(
 				'email' => 'required|email'
 			)
@@ -183,7 +183,7 @@ class AccountController extends BaseController {
 				->withErrors($validator)
 				->withInput();
 		} else {
-			
+
 			$user  = User::where('email', '=', Input::get('email'));
 
 			if ($user->count()) {
@@ -203,7 +203,7 @@ class AccountController extends BaseController {
 					});
 
 					return Redirect::route('home')
-						->with('global', 'An email is sent to you with a link to reset your password.');				
+						->with('global', 'An email is sent to you with a link to reset your password.');
 				}
 
 			}
@@ -219,19 +219,19 @@ class AccountController extends BaseController {
 
 				if($user->count()) {
 					$user = $user->first();
-					$user->password 		= $user->password_temp;						
+					$user->password 		= $user->password_temp;
 					$user->password_temp 	= '';
 					$user->code 			= '';
 
 					if($user->save()) {
 						return Redirect::route('home')
-				 		->with('global', 'Your account has been recovered and you can sign in now.');      
+				 		->with('global', 'Your account has been recovered and you can sign in now.');
 
 					}
 				}
-	
+
 				 return Redirect::route('home')
-				 		->with('global', 'Could not recover your account.');      
+				 		->with('global', 'Could not recover your account.');
 	}
 
 }

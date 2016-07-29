@@ -148,9 +148,15 @@ ul.navbar-top li.dropdown ul li a  {
 }
 
 .home-posts-wrapper {
+  display: block;
   margin: 0 auto;
   width: 100%;
-  text-align: center;
+
+}
+
+.home-posts-wrapper>div {
+  display: inline-block;
+  width: 100%;
 }
 
 article {
@@ -388,43 +394,50 @@ div.contact-title {
 }
 
 
-.article-blocks {
-  display: inline-block;
-  width: 220px;
-  height: 250px;
-  background: #ffffff;
-  float: left;
-  padding-left: 5px;
-  margin-right: 30px;
-  border: solid 1px #f2f2f2;
-  border-radius: 5px;
-  /*box-shadow: 1px 1px 1px 1px #ccc;*/
+/*.article-blocks{
+  position: relative;
+  width: 80%;
+  height: 200px;
+  margin-bottom: 20px;
+  overflow: hidden;
+ }
+*/
+.home-poster-info {
+  display: block;
+  padding-left: 15px;
+  text-align: center;
 }
 
-.article-blocks div.post-body {
-    overflow: hidden;
+.home-poster-info div {
+  display: block;
 }
 
-.article-blocks div.post-body a {
-
+div.home-post-title{
+  margin-top: 15px;
 }
+
+div.home-post-title a {
+  color: rgba(96, 115, 159, 0.8);
+  font-size: 1.6em;
+  text-decoration: none;
+}
+
 
 .article-blocks:hover {
    /*border-top: 1px solid #9999FF; */
-   box-shadow: 0 0 0 1px #8291ff;;
+   /*box-shadow: 0 0 0 1px #8291ff;*/
    background: #fff;
+   border-left: 5px solid #8291ff;
 }
 
 
-p.published-on {
-  position: relative;
-  color:#bbb;
+.published-on {
+  display:  inline-block;
+  color: #fa9ea4;
   font-family:monospace;
-  font-weight: 800;
-  font-size: 14px;
-  margin-bottom: 10px;
+  font-weight: 900;
+  font-size: 12px;
 }
-
 
 
 .post-title {
@@ -435,8 +448,11 @@ p.published-on {
   cursor: default;
 }
 
-.post-title-thumbnail{
-   color: #5f5bec;
+.post-published-by {
+   color: #888;
+   font-family:monospace;
+   font-size: 0.8em;
+   font-weight: 800;
 }
 
 .post-title-main {
@@ -455,24 +471,20 @@ p.published-on {
   padding-left: 5px;
 }
 
-/*.article-blocks>div{
-  display: inline-block;
-
-}*/
-
 .article-blocks .post-body{
   text-align: left;
+  overflow: hidden;
 }
 
 .post-manip {
-  background: #eee;
-  position: relative;
-  height: 23px;
+  display: block;
 }
 
-.post-manip>p{
+.post-manip>div{
+  display: inline-block;
   float: right;
   margin-bottom: 0;
+  padding: 5px 20px;
 }
 
 
@@ -493,8 +505,12 @@ p.published-on {
   width: 100%;
 }
 
-.create-post {
- margin: 10px;
+.create-post-btn {
+ margin-bottom: 30px;
+}
+
+.create-post-btn a {
+font-weight: 700;
 }
 
 .delete-post-btn {
@@ -865,9 +881,8 @@ form.upload-profile-image-form  {
   display: inline-block;
 }
 
-.image-upload-info {
-  margin-top: 5px;
-  background:#bbb;
+.image-upload-info span {
+  font-size: 1.5em;
 }
 
 
@@ -1311,8 +1326,8 @@ div.panels form {
 
    .article-blocks{
       width: 100%;
-      height: 200px;
-      margin-bottom: 20px;
+      height: 100px;
+      margin-bottom: 10px;
       overflow: hidden;
    }
 }
@@ -1329,8 +1344,8 @@ div.panels form {
 
    .article-blocks{
       width: 100%;
-      height: 200px;
-      margin-bottom: 20px;
+      height: 100px;
+      margin-bottom: 10px;
       overflow: hidden;
    }
 

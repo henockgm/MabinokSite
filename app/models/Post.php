@@ -4,7 +4,7 @@
 class Post extends Eloquent {
 
 
-    protected $fillable = array('title', 'slug', 'draft', 'body', 'owner');
+    protected $fillable = array('user_id', 'title', 'slug', 'draft', 'body', 'owner');
 	/**
 	 * The database table used by the model.
 	 *

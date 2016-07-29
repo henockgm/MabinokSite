@@ -6,7 +6,7 @@ class HomeController extends BaseController {
 
 		return View::make('home', [
 
-			'posts' => Post::orderBy('created_at', 'DESC')->paginate(6)
+			'posts' => Post::orderBy('created_at', 'DESC')->paginate(25)
 		]);
 
 		//$posts = Post::where('draft', '=' ,  0)->get();

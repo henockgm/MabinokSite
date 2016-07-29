@@ -176,13 +176,7 @@ Route::group(array('before' => 'auth'), function() {
       'uses' => 'UserController@userProfile'
     ));
 
-    /*
-    /  show profile(GET)
-    */
-    Route::get('/user/{username}', [
-      'as' => 'show-user-profile',
-      'uses' => 'GizeController@getUserProfile'
-    ]);
+
 
     /*
     / Change password (GET)
@@ -287,5 +281,13 @@ Route::group(array('before' => 'guest'), function() {
       'as' => 'account-activate',
       'uses' => 'AccountController@getActivate'
     ));
+
+    /*
+    /  show profile(GET)
+    */
+    Route::get('/user/{username}', [
+      'as' => 'show-user-profile',
+      'uses' => 'ProfileController@getUserProfile'
+    ]);
 
 });
