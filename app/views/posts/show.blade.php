@@ -22,7 +22,9 @@
 
 
 		@if($comments = Post::find($post->id)->comments)
+
           <div class="comments-wrapper">
+          <p class="comments-count"> {{ $comments->count() }} Comment(s) Found: </p>
             @foreach ($comments as $comment)
                 <section class="comment-block">
 	                <div class="post-comment-author">
