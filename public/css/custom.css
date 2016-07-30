@@ -1,7 +1,5 @@
 @import url('http://fonts.googleapis.com/css?family=Lato:100');
 
-@import "compass/css3";
-
 
 @font-face {
     font-family: metropolice;
@@ -397,7 +395,11 @@ div.contact-title {
 .article-blocks{
   display: block;
   cursor: pointer;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
  }
+
+
 
  .row:nth-child(even) {
   border-left: 5px solid #ff8080;
@@ -513,7 +515,7 @@ div.home-post-title a {
   display: inline-block;
   float: right;
   margin-bottom: 0;
-  padding: 5px 20px;
+  padding: 5px 10px;
 }
 
 
@@ -670,7 +672,7 @@ div.post-comment-body {
   background:#ffffff;
   margin-bottom: 20px;
   padding:20px 10px;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 div.comment-input {
@@ -829,10 +831,14 @@ ul.socialmedialinks {
 
 article.main-post-body-wrapper{
   background: #ffffff;
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 1.1em;
 }
 
 article.main-post-body-wrapper h2 {
   padding: 5px 10px;
+
 }
 
 
@@ -1385,7 +1391,7 @@ div.panels form {
 
   .col-sm-9 {
     width: 75%;
-    padding-left: 15px !important;
+    padding-left: 10px !important;
     padding-right: 0 !important;
   }
 
@@ -1400,6 +1406,9 @@ div.panels form {
     width: 100%;
   }
 
+  .post-manip>div {
+    padding: 2px 2px;
+  }
 
 }
 
