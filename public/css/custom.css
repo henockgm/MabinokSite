@@ -437,6 +437,16 @@ div.home-post-title a {
   }
 
 
+.home-post-title p {
+   bottom: 0; left: 0;
+   font-family: 'Lato';
+   font-weight: 700;
+   font-size: 0.8em;
+   color: inherit;
+   margin-top: 10px;
+}
+
+
 .article-blocks:hover {
    /*border-top: 1px solid #9999FF; */
    /*box-shadow: 0 0 0 1px #8291ff;*/
@@ -701,6 +711,8 @@ div.comments-wrapper hr {
   color: red;
   font-size: 11px;
 }
+
+
 
 
 

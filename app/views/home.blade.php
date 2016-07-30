@@ -25,6 +25,14 @@
 
 			    <div class="col-sm-9 home-post-title">
 					 <a href="{{ URL::action('post-show', $post->id) }}">{{ $post->title }} </a>
+					 @if($comments = Post::find($post->id)->comments)
+					 	@if($comments->count() == 0) <p>  no comments yet</p>
+						@elseif ($comments->count() == 1) <p> {{ $comments->count() }} comment </p>
+						@elseif ($comments->count()  > 1) <p> {{ $comments->count() }} comments </p>
+						@else <p>  no comments </p>
+						@endif
+
+					 @endif
 			    </div>
 
 			    <div class="col-sm-1 home-post-manip" ">  <!-- style="background-color:lavenderblush; -->
