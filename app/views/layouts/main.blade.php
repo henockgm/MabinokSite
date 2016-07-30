@@ -6,7 +6,7 @@
     {{ HTML::style('css/social-sharing.css') }}
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-startup-image" href="http://mabinok.com/public/images/ios_startup-6@2x.png" sizes="750x1294">
+    <link rel="apple-touch-startup-image" href="http://mabinok.com/images/ios_startup-6@2x.png" sizes="750x1294">
     {{ HTML::style('css/bootstrap.css') }}
     {{ HTML::style('css/custom.css') }}
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
