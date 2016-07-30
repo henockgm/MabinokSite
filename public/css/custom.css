@@ -399,6 +399,14 @@ div.contact-title {
   cursor: pointer;
  }
 
+ .row:nth-child(even) {
+  border-left: 5px solid #ff8080;
+ }
+
+ .row:nth-child(odd) {
+  border-left: 5px solid #00b3b3;
+ }
+
  .clickable-post-row{
   height: 50px !important;
   width: 200px !important;
@@ -430,7 +438,7 @@ div.home-post-title a {
    /*border-top: 1px solid #9999FF; */
    /*box-shadow: 0 0 0 1px #8291ff;*/
    background: #fff;
-   border-left: 5px solid #8291ff;
+   border-left: 7px solid #8291ff;
 }
 
 
@@ -1368,6 +1376,12 @@ div.panels form {
     width: 4%;
   }
 
+  .sm-links-block {
+    margin: 5px;
+    width: 100%;
+  }
+
+
 }
 
 @media screen and (max-width: 780px) {
@@ -1440,6 +1454,10 @@ div.panels form {
 
   .post-published-by {
      font-size: 9px;
+  }
+
+  ul.socialmedialinks {
+    padding-left: 0;
   }
 
 }
