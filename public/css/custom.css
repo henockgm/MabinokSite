@@ -427,11 +427,14 @@ div.home-post-title{
   margin-top: 15px;
 }
 
+
 div.home-post-title a {
-  color: #12263b;
-  font-size: 1.6em;
-  text-decoration: none;
-}
+    color: #12263b;
+    font-size: 1.6em;
+    font-family: 'Lato';
+    font-weight: 400;
+    text-decoration: none;
+  }
 
 
 .article-blocks:hover {
@@ -491,12 +494,19 @@ div.home-post-title a {
   display: block;
 }
 
-.post-manip>div{
+.show-post-manip{
+  display: block;
+  width: 100%;
+
+}
+.post-manip>div, .show-post-manip div{
   display: inline-block;
   float: right;
   margin-bottom: 0;
   padding: 5px 20px;
 }
+
+
 
 
 
@@ -884,6 +894,11 @@ article.main-post-body-wrapper h2 {
 
     background-color: transparent;
    }*/
+
+ .no-gutter > [class*='col-'] {
+  padding-right:0;
+  padding-left:0;
+  }
 
 form.upload-profile-image-form  {
   display: inline-block;
@@ -1323,6 +1338,10 @@ div.panels form {
       float: right;
    }
 
+   .home-container {
+    width: 100%;
+   }
+
     .posts-row-wrap{
       height: auto;
       margin-bottom: 0;
@@ -1339,6 +1358,7 @@ div.panels form {
 
   div.home-post-title a {
     font-size: 1.2em;
+
   }
 
   .article-blocks>div{
@@ -1347,16 +1367,20 @@ div.panels form {
   }
 
   .col-sm-2 {
-    width: 18%;
-    padding: 0;
+    width: 18% !important;
+    padding: 0 !important;
   }
 
   .col-sm-9 {
-    width: 78%;
+    width: 75%;
+    padding-left: 15px !important;
+    padding-right: 0 !important;
   }
 
   .col-sm-1 {
-    width: 4%;
+    width: 7%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 
   .sm-links-block {
@@ -1397,7 +1421,7 @@ div.panels form {
 @media screen and (max-width: 479px) {
   .home-container {
      margin: 0 auto;
-     width: 98%;
+     width: 100%;
   }
 
   .contact-me>div {
@@ -1431,10 +1455,7 @@ div.panels form {
   }
 
   div.home-post-title a {
-    font-family: 'Lato';
     font-size: 1em;
-    font-weight: 400;
-
   }
 
   .published-on {
@@ -1448,6 +1469,10 @@ div.panels form {
 
   ul.socialmedialinks {
     padding-left: 0;
+  }
+
+  .post-manip>div {
+    padding: 1px;
   }
 
 }

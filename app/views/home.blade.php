@@ -13,7 +13,7 @@
 		@foreach($posts as $post)
 
 
-		<div class="row article-blocks" onclick="window.location.href='{{ URL::action('post-show', $post->id) }}' ">
+		<div class="row no-gutter article-blocks" onclick="window.location.href='{{ URL::action('post-show', $post->id) }}' ">
 
 			    <div class="col-sm-2 home-poster-info"> <!--style="background-color:lavender; -->
 					<div class="home-poster-image">

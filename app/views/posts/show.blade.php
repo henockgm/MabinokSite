@@ -8,14 +8,17 @@
 	 <div class="container alt1">
 
 			<a href="{{ URL::previous() }}"> <i class="fa fa-xlg fa-arrow-circle-left" aria-hidden="true" style="font-size: 44px;"></i> </a>
-			@if(Auth::check())
-                <div class="post-manip">
-                    <div data-placement="top" data-toggle="tooltip" title="Delete"><a href="{{ URL::action('post-delete', $post->slug) }}" class="btn  btn-xs btn-danger post-manip-btns"><span class="glyphicon glyphicon-trash"></span></a></div>
-                    <div data-placement="top" data-toggle="tooltip" title="Edit"><a href="{{ URL::action('post-edit', $post->slug) }}" class="btn  btn-xs btn-warning post-manip-btns"><span class="glyphicon glyphicon-pencil"></span></a></div>
-                </div>
-            @endif
+
 
 		 <article class="main-post-body-wrapper">
+
+            @if(Auth::check())
+            <div class="show-post-manip">
+                <div data-placement="top" data-toggle="tooltip" title="Delete"><a href="{{ URL::action('post-delete', $post->slug) }}" class="btn  btn-xs btn-danger post-manip-btns"><span class="glyphicon glyphicon-trash"></span></a></div>
+                <div data-placement="top" data-toggle="tooltip" title="Edit"><a href="{{ URL::action('post-edit', $post->slug) }}" class="btn  btn-xs btn-warning post-manip-btns"><span class="glyphicon glyphicon-pencil"></span></a></div>
+            </div>
+            @endif
+
 		 	<h2> <a class="post-title post-title-main" href="{{ URL::action('post-show', $post->id) }}">{{ $post->title }}</a> </h2>
 		 		<div class="post-body-main"> {{ Markdown::parse($post->body) }}  </div>
 		</article>
