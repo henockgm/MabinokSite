@@ -11,7 +11,7 @@
     {{ HTML::style('css/bootstrap.css') }}
     {{ HTML::style('css/custom.css') }}
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
-    {{ HTML::style('css/blueimp-gallery.min.css') }}
+    {{ HTML::style('http://fonts.googleapis.com/css?family=Lato:300,400,700') }}
 
 
 	</head>

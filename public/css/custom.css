@@ -9,7 +9,7 @@
 }
 
 @font-face {
-    font-family: Lato;
+    font-family: lato-hairline;
     src: url(Lato_Hairline.ttf);
 }
 
@@ -208,7 +208,7 @@ button.navbar-toggle.custom:hover  .icon-bar.custom{
 
  /*************** contact page **********/
 .contact-header {
-   font-family: 'Lato';
+   font-family: 'lato-hairline';
    color: #B0BEC5;
    /*color: green;*/
    text-align: center;
@@ -428,7 +428,7 @@ div.home-post-title{
 }
 
 div.home-post-title a {
-  color: rgba(96, 115, 159, 1.0);
+  color: #12263b;
   font-size: 1.6em;
   text-decoration: none;
 }
@@ -874,24 +874,6 @@ article.main-post-body-wrapper h2 {
   display: block;
   position: relative;
 }
-
-.header-logo::after {
-  content: "";
-  background: url("/packages/images/logo3.png");
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-}
-
-
-
-
-
-
 
 
 /*******************  EXTRA SETTINGS ************************************/
@@ -1449,7 +1431,10 @@ div.panels form {
   }
 
   div.home-post-title a {
+    font-family: 'Lato';
     font-size: 1em;
+    font-weight: 400;
+
   }
 
   .published-on {
