@@ -12,10 +12,8 @@
 
 		@foreach($posts as $post)
 
-		<div class="article-blocks" onclick="window.location.href='{{ URL::action('post-show', $post->id) }}'">
 
-			<div class="row">
-
+		<div class="row article-blocks" onclick="window.location.href='{{ URL::action('post-show', $post->id) }}' ">
 
 			    <div class="col-sm-2 home-poster-info"> <!--style="background-color:lavender; -->
 					<div class="home-poster-image">
@@ -25,7 +23,7 @@
 					<div class="published-on"> {{ $post->created_at->diffForHumans()}} </div>
 			    </div>
 
-			    <div class="col-sm-9 home-post-title" ">  <!-- style="background-color:lavenderblush; -->
+			    <div class="col-sm-9 home-post-title">
 					 <a href="{{ URL::action('post-show', $post->id) }}">{{ $post->title }} </a>
 			    </div>
 
@@ -37,9 +35,9 @@
 			        </div>
 	        	@endif
 			    </div>
-			</div>
 
-		</div>
+         </div>
+
 
 		@endforeach
 
