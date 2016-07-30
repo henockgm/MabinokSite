@@ -73,7 +73,12 @@
 
             $post_draft       = 0;
 
-            $post =  Post::create(array(
+            if(Auth::check()) {
+              $user_id = Auth::user()->id;
+            } else  { return Redirect::route('post-create-blog-post')->withErrors($validator)->withInput(); }
+
+            $post = Post::create(array(
+                  'user_id' => $user_id,
          					'title' => $post_title,
          					'slug'  => $post_slug,
          					'draft' => $post_draft,
