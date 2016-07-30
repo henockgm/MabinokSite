@@ -6,7 +6,7 @@
     {{ HTML::style('css/social-sharing.css') }}
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-startup-image" href=" {{ URL::to('images/ios_startup.png') }} ">
+    <link rel="apple-touch-startup-image" href=" {{ URL::to('/images/ios_startup.png') }} ">
     <link rel="apple-touch-icon" sizes="120x120" href="{{ URL::to('touch-icon-iphone-retina.png') }}">
     {{ HTML::style('css/bootstrap.css') }}
     {{ HTML::style('css/custom.css') }}
