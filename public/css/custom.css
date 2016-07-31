@@ -868,11 +868,16 @@ article.main-post-body-wrapper h2 {
   padding: 5px 10px;
   color: #12263b;
   overflow: hidden;
+  line-height: 1.5em;
 }
 
 .show-post-body pre code{
   color: #004080;
   overflow : scroll;
+}
+
+.show-post-body p code{
+
 }
 
 .col-md-4 {
