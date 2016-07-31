@@ -7,7 +7,7 @@
 
 	 <div class="container alt1">
 
-			<a href="{{ URL::previous() }}"> <i class="fa fa-xlg fa-arrow-circle-left" aria-hidden="true" style="font-size: 44px;"></i> </a>
+			<a class="back-btn" href="{{ URL::previous() }}"> <i class="fa fa-xlg fa-arrow-circle-left" aria-hidden="true" style="font-size: 44px;"></i> </a>
 
 
 		 <article class="main-post-body-wrapper">
@@ -20,7 +20,7 @@
             @endif
 
 		 	<h2> <a class="post-title post-title-main" href="{{ URL::action('post-show', $post->id) }}">{{ $post->title }}</a> </h2>
-		 		<div class="post-body-main"> {{ Markdown::parse($post->body) }}  </div>
+		 		<div class="show-post-body"> {{ Markdown::parse($post->body) }}  </div>
 		</article>
 
 

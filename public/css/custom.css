@@ -11,6 +11,16 @@
     src: url(Lato_Hairline.ttf);
 }
 
+
+/* FONTS */
+/* #12263b  home-post-title */
+/* */
+/* */
+/* */
+/* */
+/* */
+/* */
+
 body, html {
 -webkit-font-smoothing: antialiased;
   margin: 0;
@@ -520,8 +530,6 @@ div.home-post-title a {
 
 
 
-
-
 /*@keyframes show-post-maip {
   from {display: none;}
   to{display: block;}
@@ -842,28 +850,29 @@ article.main-post-body-wrapper h2 {
 }
 
 
-.post-body-main {
+.show-post-body {
+  color: #12263b;
   background: #ffffff;
-  padding:5px;
   overflow: hidden;
+  line-height: 1.5em;
 }
 
 
-.post-body-main pre{
+.show-post-body pre{
   background: #FBFAE9;
   border: none;
 }
 
-.post-body-main p{
+.show-post-body p {
   font-size: 1.2em;
   padding: 5px 10px;
-  color: #404040;
+  color: #12263b;
   overflow: hidden;
 }
 
-.post-body-main pre code{
+.show-post-body pre code{
   color: #004080;
-  overflow: scroll;
+  overflow : scroll;
 }
 
 .col-md-4 {
@@ -1149,8 +1158,6 @@ div.panels form {
     width: 900px;
     height: 1000px;
    }
-
-
 }
 
 
