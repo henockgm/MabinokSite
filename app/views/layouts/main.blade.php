@@ -117,6 +117,11 @@ $(document).ready(function(){
 </script>
 
 
+<script>
+  $("textarea").height( $("textarea")[0].scrollHeight );
+</script>
+
+
 
 </body>
 </html>

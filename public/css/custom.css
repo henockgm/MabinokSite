@@ -14,7 +14,7 @@
 
 /* FONTS */
 /* #12263b  home-post-title */
-/* */
+/* #7d97ed  post-title-font-color */
 /* */
 /* */
 /* */
@@ -478,7 +478,6 @@ div.home-post-title a {
 
 .post-title {
   margin-top: 10px;
-  font-size: 1.0em;
   text-decoration: none;
   pointer-events: none;
   cursor: default;
@@ -491,8 +490,10 @@ div.home-post-title a {
    font-weight: 800;
 }
 
-.post-title-main {
-  color: #7d97ed;;
+.show-post-title {
+  color: #7d97ed;
+  font-weight: 900;
+  font-size: 1.5em;
 }
 
 .post-title:hover{
@@ -529,14 +530,32 @@ div.home-post-title a {
 }
 
 input.post-title-input {
-  font-size: 1.8em;
+  color: #2b7eec;
+  font-size: 1.5em;
+  font-weight: 900px;
   font-family: 'Lato';
+  height: 50px;
 }
 
 textarea.post-body-input {
   font-size: 1.5em;
-  font-family: 'Lato';
-  line-height: 1.5em;
+  color: #12263b;
+  box-sizing: border-box;
+  max-width: 100%;
+  height: 200px;
+  -webkit-transition: height 0.5s ease;
+  -moz-transition: height 0.5s ease;
+  -o-transition: height 0.5s ease;
+  -ms-transition: height 0.5s ease;
+  transition: height 0.5s ease;
+}
+
+textarea.post-body-input:focus {
+  height: 340px;
+}
+
+form.edit-post-form textarea {
+  font-size: 1.2em;
 }
 
 

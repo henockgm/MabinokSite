@@ -31,7 +31,6 @@
 						@elseif ($comments->count()  > 1) <p> {{ $comments->count() }} comments </p>
 						@else <p>  no comments </p>
 						@endif
-
 					 @endif
 			    </div>
 

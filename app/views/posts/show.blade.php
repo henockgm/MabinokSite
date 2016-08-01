@@ -19,7 +19,7 @@
             </div>
             @endif
 
-		 	<h2> <a class="post-title post-title-main" href="{{ URL::action('post-show', $post->id) }}">{{ $post->title }}</a> </h2>
+		 	<h2> <a class="post-title show-post-title" href="{{ URL::action('post-show', $post->id) }}">{{ $post->title }}</a> </h2>
 		 		<div class="show-post-body"> {{ Markdown::parse($post->body) }}  </div>
 		</article>
 
