@@ -842,13 +842,13 @@ article.main-post-body-wrapper{
   font-family: 'Lato';
   font-weight: 400;
   font-size: 1.1em;
+  padding: 50px 20px;
 }
 
 article.main-post-body-wrapper h2 {
   padding: 5px 10px;
 
 }
-
 
 .show-post-body {
   color: #12263b;
@@ -868,7 +868,7 @@ article.main-post-body-wrapper h2 {
   padding: 5px 10px;
   color: #12263b;
   overflow: hidden;
-  line-height: 1.5em;
+  line-height: 2em;
 }
 
 .show-post-body pre code{
