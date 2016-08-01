@@ -24,7 +24,7 @@
 
 			  <div class="form-group">
 			 	<label for="blog_post_body"> Body: </label>
-			 	<textarea name="blog_post_body" cols="50" rows="12" class="form-control post-body-input" >{{ Input::old('blog_post_body') ? e(Input::old('blog_post_body')) : '' }}</textarea>
+			 	<textarea name="blog_post_body" class="form-control post-body-input" >{{ Input::old('blog_post_body') ? e(Input::old('blog_post_body')) : '' }}</textarea>
 			 	@if($errors->has('blog_post_body'))
 			 		<p class="error-disp"> * {{ $errors->first('blog_post_body') }}</p>
 			 	@endif
