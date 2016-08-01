@@ -528,6 +528,17 @@ div.home-post-title a {
   padding: 5px 10px;
 }
 
+input.post-title-input {
+  font-size: 1.8em;
+  font-family: 'Lato';
+}
+
+textarea.post-body-input {
+  font-size: 1.5em;
+  font-family: 'Lato';
+  line-height: 1.5em;
+}
+
 
 
 /*@keyframes show-post-maip {
@@ -569,9 +580,7 @@ font-weight: 700;
   width: 700px;
 }
 
-.form-create-post {
-  max-width: 800px;
-}
+
 
 
 /**********************  Panels setting *****************************/

@@ -7,7 +7,7 @@
 
 
  <div class="container alt1">
-   	<div class="panel center panel-create-post">
+   	<div class="panel panel-create-post">
    		<div class="panel-heading panel-create-post-heading">
    			<h3 class="panel-title"> Got something intersting? Post it! </h3>
    		</div>
@@ -16,7 +16,7 @@
 
 			 <div class="form-group">
 			 	<label for="blog_post_title"> Title: </label>
-			 	<input type="text" name="blog_post_title" class="form-control" value={{ Input::old('blog_post_title') ? e(Input::old('blog_post_title')) : '' }}>
+			 	<input type="text" name="blog_post_title" class="form-control post-title-input" value={{ Input::old('blog_post_title') ? e(Input::old('blog_post_title')) : '' }}>
 			 	@if($errors->has('blog_post_title'))
 			 		<p class="error-disp"> * {{ $errors->first('blog_post_title') }}</p>
 			 	@endif
@@ -24,7 +24,7 @@
 
 			  <div class="form-group">
 			 	<label for="blog_post_body"> Body: </label>
-			 	<textarea name="blog_post_body" cols="50" rows="12" class="form-control" >{{ Input::old('blog_post_body') ? e(Input::old('blog_post_body')) : '' }}</textarea>
+			 	<textarea name="blog_post_body" cols="50" rows="12" class="form-control post-body-input" >{{ Input::old('blog_post_body') ? e(Input::old('blog_post_body')) : '' }}</textarea>
 			 	@if($errors->has('blog_post_body'))
 			 		<p class="error-disp"> * {{ $errors->first('blog_post_body') }}</p>
 			 	@endif
