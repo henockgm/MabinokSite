@@ -63,7 +63,7 @@
 
           @else
             <li  class="main-nav"><a href="{{ URL::route('account-sign-in') }}" class="nav-item"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            <li class="main-nav"><a href="{{ URL::route('account-create') }}" class="nav-item"><span class="glyphicon glyphicon-user"></span> Register </a></li>
+            <li class="main-nav"><a href="{{ URL::route('account-create') }}" class="nav-item"><span class="glyphicon glyphicon-user"></span> Join </a></li>
           @endif
         </ul>
       </div>

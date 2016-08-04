@@ -412,11 +412,11 @@ div.contact-title {
 
 
  .row:nth-child(even) {
-  border-left: 5px solid #ff8080;
+  border-left: 5px solid #a2a2c3;
  }
 
  .row:nth-child(odd) {
-  border-left: 5px solid #00b3b3;
+  border-left: 5px solid #d0d0e1;
  }
 
  .clickable-post-row{
@@ -452,9 +452,9 @@ div.home-post-title a {
 .home-post-title p {
    bottom: 0; left: 0;
    font-family: 'Lato';
+   color: #7575a3;
    font-weight: 700;
    font-size: 0.8em;
-   color: inherit;
    margin-top: 10px;
 }
 
