@@ -2,6 +2,11 @@
 /vendor
 /app/config/local
 /app/config/mail.php
+/app/filters.php
+/app/routes.php
+/public/images
+/public/files
+/public/uploads
 composer.phar
 composer.lock
 .env.local.php
