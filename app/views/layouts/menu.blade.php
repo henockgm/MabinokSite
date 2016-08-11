@@ -24,7 +24,7 @@
           <li class="dropdown main-nav">
             <a class="dropdown-toggle nav-item" data-toggle="dropdown" href="#"> <span class="glyphicon glyphicon-folder-open"></span> Portfolio <span class="caret"></span> </a>
             <ul class="dropdown-menu custom" role="menu">
-              <li> <a href="{{ URL::route('portfolio-cover-letter')}}"> <span class="glyphicon glyphicon-paperclip"></span> Cover Letter </a> </li>
+              <li> <a href="{{ URL::route('cover-show')}}"> <span class="glyphicon glyphicon-paperclip"></span> Cover Letter </a> </li>
               <li> <a href="{{ URL::route('portfolio-my-cv') }}"> <span class="glyphicon glyphicon-file"></span> CV </a> </li>
               <li> <a href="{{ URL::route('portfolio-certificate') }}"> <span class="glyphicon glyphicon-education"></span>Education </a> </li>
               <li> <a href="#" > <span class="glyphicon glyphicon-wrench"></span> Skills </a> </li>

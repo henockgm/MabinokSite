@@ -13,8 +13,8 @@ class AddForeignUserIdToPosts extends Migration {
 	public function up()
 	{
 		Schema::table ('posts', function($table) {
-           $table->integer('user_id')->unsigned()->after('id');
-           $table->foreign('user_id')->references('id')->on('users');
+          // $table->integer('user_id')->unsigned()->after('id');
+           // $table->foreign('user_id')->references('id')->on('users');
 		});
 	}
 
@@ -26,7 +26,7 @@ class AddForeignUserIdToPosts extends Migration {
 	public function down()
 	{
 		// drop column and foreign key
-		$table->dropForeign(['user_id']);
+		//$table->dropForeign(['user_id']);
 	}
 
 }

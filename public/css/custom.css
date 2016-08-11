@@ -530,8 +530,9 @@ textarea.post-body-input:focus {
   height: 340px;
 }
 
-form.edit-post-form textarea {
-  font-size: 1.2em;
+form.edit-post-form textarea, form.edit-cover-form textarea {
+  font-size: 1.4em;
+  line-height: 1.5em;
 }
 
 
@@ -924,6 +925,24 @@ article.main-post-body-wrapper h2 {
     background-color: transparent;
    }*/
 
+
+ .cover-tools {
+  height: 50px !important;
+  width: 75%;
+  padding-top: 5px;
+  margin: 0 auto;
+  line-height: 1.0em;
+ }
+
+ .cover-tools a {
+  margin-right: 10px;
+ }
+
+.back-btn {
+  width: 50px;
+  height: 50px;
+  font-size: 44px;
+}
  .no-gutter > [class*='col-'] {
   padding-right:0;
   padding-left:0;
@@ -1059,32 +1078,46 @@ form.upload-profile-image-form  {
 
 /* *****************    PORTFOLIO SECTION  *************************/
 
-.cover-letter  {
- margin-bottom: 100px !important;
-}
 
- div.mainText {
-  display: block;
-  font-size: 1.1em !important;
-  font-weight: 400;
-  line-height: 2.0em;
+
+
+
+
+
+.cover-body  {
   margin: 0 auto;
-  width: 70%;
+  width: 75%;
   padding: 20px 50px;
   background: #fff;
   color: #404040;
+  display: block;
+  margin-bottom: 100px !important;
 }
 
-
-p.greetings {
- color: #;
+div.address-block{
+  display: block;
+  margin-bottom: 50px;
 }
 
-.cover-letter h4 {
-  margin-bottom: 30px;
+div.address-block p {
+  width: 100%;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  line-height: 0.8em;
+}
+  div.cover-main-text {
+  font-size: 1.1em !important;
+  font-weight: 400;
+  line-height: 2.0em;
+
 }
 
-  h2,  h4 {
+p.cover-btm {
+  margin:50px 0;
+}
+
+h2, h4 {
   margin: 0 auto;
   width: 70%;
 }

@@ -60,6 +60,12 @@ Route::get('/portfolio/cover', array(
   'uses' => 'DocumentController@getMyCoverLetter'
 ));
 
+/* TEMP */
+Route::get('/cover', array(
+  'as' => 'cover-show',
+  'uses' => 'PortfolioController@showCover'
+));
+
 
 //**********************************************************
 
@@ -165,7 +171,45 @@ Route::group(array('before' => 'auth'), function() {
           'uses' => 'PostController@postEdit'
         ]);
 
+        /*
+        / update cover (POST)  TEMP
+        */
+        Route::post('/cover/update',  [
+          'as' => 'update-cover',
+          'uses' => 'PortfolioController@updateCover'
+        ]);
+
+        /*
+        / update cover (POST)  TEMP
+        */
+        Route::post('/cover/create',  [
+          'as' => 'create-cover',
+          'uses' => 'PortfolioController@storeCover'
+        ]);
+
+
+        /*
+        / update cover (get)  TEMP
+        */
+        Route::get('/cover/edit',  [
+          'as' => 'edit-cover',
+          'uses' => 'PortfolioController@editCover'
+        ]);
+
+
+        /*
+        / update cover (get)  TEMP
+        */
+        Route::get('/cover/create',  [
+          'as' => 'create-cover',
+          'uses' => 'PortfolioController@createCover'
+        ]);
+
+
     });
+
+
+
 
 
     /*
