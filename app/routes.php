@@ -131,22 +131,6 @@ Route::group(array('before' => 'auth'), function() {
 
 
 
-    });
-
-
-    /*
-    *  admin routes here
-    */
-    Route::group(array('prefix' => 'admins', 'before' => array('auth|admin')), function() {
-
-        /*
-        / Delete Post (GET)
-        */
-        Route::get('/delete/{slug}',  [
-          'as' => 'post-delete',
-          'uses' => 'PostController@getDelete'
-        ]);
-
         /*
         / delete post (POST)
         */
@@ -155,13 +139,6 @@ Route::group(array('before' => 'auth'), function() {
           'uses' => 'PostController@postDelete'
         ]);
 
-        /*
-        / edit post (GET)
-        */
-        Route::get('/edit/{slug}',  [
-          'as' => 'post-edit',
-          'uses' => 'PostController@getEdit'
-        ]);
 
         /*
         / edit post (POST)
@@ -188,6 +165,32 @@ Route::group(array('before' => 'auth'), function() {
         ]);
 
 
+
+    });
+
+
+    /*
+    *  admin routes here
+    */
+    Route::group(array('prefix' => 'admins', 'before' => array('auth|admin')), function() {
+
+        /*
+        / Delete Post (GET)
+        */
+        Route::get('/delete/{slug}',  [
+          'as' => 'post-delete',
+          'uses' => 'PostController@getDelete'
+        ]);
+
+        /*
+        / edit post (GET)
+        */
+        Route::get('/edit/{slug}',  [
+          'as' => 'post-edit',
+          'uses' => 'PostController@getEdit'
+        ]);
+
+
         /*
         / update cover (get)  TEMP
         */
@@ -209,9 +212,6 @@ Route::group(array('before' => 'auth'), function() {
     });
 
 
-
-
-
     /*
     /  profile
     */
@@ -219,8 +219,6 @@ Route::group(array('before' => 'auth'), function() {
       'as' => 'profile',
       'uses' => 'UserController@userProfile'
     ));
-
-
 
     /*
     / Change password (GET)
@@ -238,11 +236,6 @@ Route::group(array('before' => 'auth'), function() {
       'as' => 'account-sign-out',
       'uses' => 'AccountController@getSignOut'
     ));
-
-
-
-
-
 
 });
 
