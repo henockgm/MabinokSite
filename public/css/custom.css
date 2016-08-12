@@ -1121,6 +1121,15 @@ p.cover-btm {
   margin:50px 0;
 }
 
+div.mainText {
+  font-size: 1.1em !important;
+  font-weight: 400;
+  line-height: 2.0em;
+  margin: 0 auto;
+  width: 70%;
+  padding: 10px 50px;
+}
+
 h2, h4 {
   margin: 0 auto;
   width: 70%;
