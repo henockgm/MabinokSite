@@ -1380,6 +1380,11 @@ div.panels form {
      float: left;
    }
 
+   .cover-body{
+    width: 90%;
+    padding: 20px 20px;
+  }
+
 }
 
 
@@ -1472,6 +1477,11 @@ div.panels form {
     width: 90%;
    }
 
+  .cover-body{
+    width: 95%;
+    padding: 20px 10px;
+  }
+
 }
 
 @media screen and (max-width: 479px) {
@@ -1529,6 +1539,11 @@ div.panels form {
 
   .post-manip>div {
     padding: 1px;
+  }
+
+  .cover-body{
+    width: 100%;
+    padding: 20px 10px;
   }
 
 }
