@@ -55,13 +55,9 @@ Route::get('/portfolio/recent-projects', array(
    'uses'=>'DocumentController@getMyRecentProjects'
 ));
 
-Route::get('/portfolio/cover', array(
-  'as' => 'portfolio-cover-letter',
-  'uses' => 'DocumentController@getMyCoverLetter'
-));
 
 /* TEMP */
-Route::get('/cover', array(
+Route::get('/portfolio/cover', array(
   'as' => 'cover-show',
   'uses' => 'PortfolioController@showCover'
 ));
@@ -151,15 +147,15 @@ Route::group(array('before' => 'auth'), function() {
         /*
         / update cover (POST)  TEMP
         */
-        Route::post('/cover/update',  [
+        Route::post('portfolio/cover/update',  [
           'as' => 'update-cover',
           'uses' => 'PortfolioController@updateCover'
         ]);
 
         /*
-        / update cover (POST)  TEMP
+        / create cover (POST)  TEMP
         */
-        Route::post('/cover/create',  [
+        Route::post('portfolio/cover/create',  [
           'as' => 'create-cover',
           'uses' => 'PortfolioController@storeCover'
         ]);
@@ -194,16 +190,16 @@ Route::group(array('before' => 'auth'), function() {
         /*
         / update cover (get)  TEMP
         */
-        Route::get('/cover/edit',  [
+        Route::get('portfolio/cover/edit',  [
           'as' => 'edit-cover',
           'uses' => 'PortfolioController@editCover'
         ]);
 
 
         /*
-        / update cover (get)  TEMP
+        / create cover (get)  TEMP
         */
-        Route::get('/cover/create',  [
+        Route::get('portfolio/cover/create',  [
           'as' => 'create-cover',
           'uses' => 'PortfolioController@createCover'
         ]);
