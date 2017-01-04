@@ -36,7 +36,7 @@
 		<div class="alt2">
 			<!-- <div class="container"> -->
 				<footer>
-					<p class="copy-right"><span class="glyphicon glyphicon-copyright-mark"></span> mabinok.com 2016 </p>
+					<p class="copy-right"><span class="glyphicon glyphicon-copyright-mark"></span> mabinok.com 2017 </p>
 			 		@include('footers.flinks')
 			 		 @include('contact.contactus')
 
