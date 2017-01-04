@@ -30,10 +30,13 @@
 			 	@endif
 			 </div>
 
+
+
 			 <button type="submit" class="btn btn-primary" class="form-control">Create your post</button>
 			{{  Form::Token() }}
 
 			</form>
+
 
    		</div>
    	</div>
