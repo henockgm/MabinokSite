@@ -1,3 +1,3 @@
 <?php 
-  Redirect::route('home');
+  return Redirect::route('home');
  ?>
