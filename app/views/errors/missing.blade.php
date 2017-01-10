@@ -1,3 +1,3 @@
-
-
- {{URL::route('home')}}"
+<?php 
+  Redirect::route('home');
+ ?>
