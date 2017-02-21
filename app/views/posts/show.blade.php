@@ -7,7 +7,7 @@
 
 	 <div class="container alt1">
 
-			<a class="back-btn" href="{{ URL::previous() }}"> <i class="fa fa-xlg fa-arrow-circle-left" aria-hidden="true" "></i> </a>
+			<a class="btn-orange-white" href="{{ URL::previous() }}"> <i class="fa fa-xlg fa-arrow-circle-left" aria-hidden="true" "></i> </a>
 
 
 		 <article class="main-post-body-wrapper">

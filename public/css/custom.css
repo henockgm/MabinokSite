@@ -556,12 +556,12 @@ font-weight: 700;
 
 }
 
-a.home-create-btn {
+a.btn-orange-white {
   color: #fff;
   background-color: #ff7260;
 }
 
-a.home-create-btn:hover {
+a.btn-orange-white:hover {
   color: #ff7260;
   background-color: #fff;
   border: 1px solid #ff7260;
