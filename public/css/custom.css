@@ -556,8 +556,9 @@ font-weight: 700;
 
 }
 
-a.home-create-btn{
-background-color: #ff7260;
+a.home-create-btn {
+  color: #fff;
+  background-color: #ff7260;
 }
 
 .delete-post-btn {
