@@ -54,6 +54,7 @@ return array(
 
 
 		'mysql' => array(
+			'strict'    => 'false',
 			'driver'    => 'mysql',
 			'host'      => $_ENV['DB_HOST'],
 			'database'  => $_ENV['DB_NAME'],
