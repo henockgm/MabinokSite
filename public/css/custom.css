@@ -548,12 +548,16 @@ form.edit-post-form textarea, form.edit-cover-form textarea {
 
 .create-post-btn {
  margin-bottom: 30px;
- background-color: #ff7260;
+ 
 }
 
 .create-post-btn a {
 font-weight: 700;
 
+}
+
+a.home-create-btn{
+background-color: #ff7260;
 }
 
 .delete-post-btn {
