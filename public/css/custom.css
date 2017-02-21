@@ -820,11 +820,11 @@ ul.socialmedialinks {
  color: #fff;
 }
 
-a.btn-twitter:hover     {background-color: #4ddbff;}   
+a.btn-twitter:hover     {background-color: #0099ff;}   
 a.btn-facebook:hover    {background-color: #5c5cd6;} 
 a.btn-googleplus:hover  {background-color: #ff3300;} 
-a.btn-instagram:hover   {background-color: #ff6699;} 
-a.btn-linkedin:hover    {background-color: #0099e6;}  
+a.btn-instagram:hover   {background: -webkit-linear-gradient(left, #cc3399, #ff8000, #ff3300);} 
+a.btn-linkedin:hover    {background-color: #0077b3;}  
   
 
 
