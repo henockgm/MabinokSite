@@ -809,20 +809,24 @@ ul.socialmedialinks {
   text-decoration: none;
   font-size: 25px;
   text-align: center;
-  background: rgb(242, 247, 244);
+  border: 1px solid #888;
 }
 
 .tw-custom, .fb-custom, .gp-custom, .in-custom, .ln-custom {
-  color: #538cc6;
+  color: #888;
 }
 
 .socialmedialinks li a:hover i {
- color: rgb(242, 247, 244);
+ color: #888;
 }
 
-.btn-twitter:hover, .btn-facebook:hover, .btn-googleplus:hover, .btn-instagram:hover, .btn-linkedin:hover  {
-  background: #538cc6;
-}
+.btn-twitter:hover {}   
+.btn-facebook:hover{} 
+.btn-googleplus:hover{} 
+.btn-instagram:hover{} 
+.btn-linkedin:hover{}  
+  
+
 
 
 /*****************   /FOOOTER  *****************************************************************************************/
