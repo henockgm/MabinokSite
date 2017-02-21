@@ -5,7 +5,7 @@
 @section('content')
 <div class="container home-container alt1">
 
-	<div class="create-post-btn" > <a href="{{ URL::route('create-blog-post') }}" class="btn btn-primary btn btn-xs"><span class="glyphicon glyphicon-pencil"></span> Create a Post</a> </div>
+	<div class="create-post-btn" > <a href="{{ URL::route('create-blog-post') }}" class="btn home-create-btn btn btn-xs"><span class="glyphicon glyphicon-pencil"></span> Create a Post</a> </div>
 
     <div class="home-posts-wrapper">
 	@if($posts->count())
