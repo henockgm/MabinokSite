@@ -38,7 +38,7 @@
 				<footer>
 					 @include('footers.flinks')
 			 		 @include('contact.contactus')
-           <p class="copy-right"><span class="glyphicon glyphicon-copyright-mark"></span> mabinok.com 2017 </p>
+           <div copy-right> <span class="glyphicon glyphicon-copyright-mark"></span> mabinok.com 2017 </div>
 				</footer>
 			<!-- </div> -->
 		</div>
