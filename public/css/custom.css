@@ -635,7 +635,9 @@ button.btn-login:hover, button.btn-account-create:hover {
 .copy-right{
   width: 100%;
   text-align: center;
-  font-weight: 600;
+  font-weight: 300;
+  position: absolute;
+  bottom: 0; left: 0;
 }
 
 
@@ -823,7 +825,7 @@ ul.socialmedialinks {
 a.btn-twitter:hover     {background-color: #0099ff;}   
 a.btn-facebook:hover    {background-color: #5c5cd6;} 
 a.btn-googleplus:hover  {background-color: #ff3300;} 
-a.btn-instagram:hover   {background: -webkit-linear-gradient(bottom, #cc3399, #ff8000, #ff3300);} 
+a.btn-instagram:hover   {background: -webkit-linear-gradient(top, #cc3399, #ff8000, #ff3300);} 
 a.btn-linkedin:hover    {background-color: #0077b3;}  
   
 
