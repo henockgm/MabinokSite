@@ -1,26 +1,29 @@
 
- <div class="footer-blocks">
-	<div class="flinks">
-	  <ul >
-	       <li> <a  href="{{ URL::route('account-sign-in')}}"> Log in </a></li>
-	       <li> <a  href="#"  data-toggle="modal" data-target="#contactus"> Contact us</a></li>
-	       <li> <a  href="http://www.google.com"  target="_blank"> Google </a></li>
-	       <li> <a  href="http://www.apple.com"  target="_blank"> Apple </a></li>
-	       <li> <a  href="httP://www.microsoft.com" target="_blank"> Microsoft </a></li>
-	  </ul>
-	</div>
+ <div class="footer-blocks flinks-wrapper">
 
-	<div class="flinks">
-	  <ul>
-	       <li> <a  href="http://everydaycarry.com"  target="_blank"> Everyday Carry </a></li>
-	       <li> <a  href="https://grandst.com/"  target="_blank"> Grand Street </a></li>
-	       <li> <a  href="https://canopy.co/"  target="_blank"> Canopy:   A Curated shop for Amazon</a></li>
-	       <li> <a  href="http://www.vocativ.com/"  target="_blank"> Vocative </a></li>
-	       <li> <a  href="http://www.mic.com"  target="_blank"> Mic:  For the youngsters</a></li>
-	       <li> <a  href="http://nomore.org/"  target="_blank"> NO!MORE</a></li>
+ 	
+		<div class="flinks">
+		  <ul >
+		       <li> <a  href="{{ URL::route('account-sign-in')}}"> Log in </a></li>
+		       <li> <a  href="#"  data-toggle="modal" data-target="#contactus"> Contact us</a></li>
+		       <li> <a  href="http://www.google.com"  target="_blank"> Google </a></li>
+		       <li> <a  href="http://www.apple.com"  target="_blank"> Apple </a></li>
+		       <li> <a  href="httP://www.microsoft.com" target="_blank"> Microsoft </a></li>
+		  </ul>
+		</div>
 
-	  </ul>
-	</div>
+		<div class="flinks">
+		  <ul>
+		       <li> <a  href="http://everydaycarry.com"  target="_blank"> Everyday Carry </a></li>
+		       <li> <a  href="https://grandst.com/"  target="_blank"> Grand Street </a></li>
+		       <li> <a  href="https://canopy.co/"  target="_blank"> Canopy:   A Curated shop for Amazon</a></li>
+		       <li> <a  href="http://www.vocativ.com/"  target="_blank"> Vocative </a></li>
+		       <li> <a  href="http://www.mic.com"  target="_blank"> Mic:  For the youngsters</a></li>
+		       <li> <a  href="http://nomore.org/"  target="_blank"> NO!MORE</a></li>
+
+		  </ul>
+		</div>
+	
 
  </div>
 
@@ -41,4 +44,6 @@
 	</ul>
 
 </div>
+
+<div class="copy-right footer-blocks"> <span class="glyphicon glyphicon-copyright-mark"></span> mabinok.com 2017 </div>
 

@@ -37,8 +37,8 @@
 			<!-- <div class="container"> -->
 				<footer>
 					 @include('footers.flinks')
-			 		 @include('contact.contactus')
-           <div copy-right footer-blocks> <span class="glyphicon glyphicon-copyright-mark"></span> mabinok.com 2017 </div>
+			 		 <!-- @include('contact.contactus') -->
+         
 				</footer>
 			<!-- </div> -->
 		</div>
