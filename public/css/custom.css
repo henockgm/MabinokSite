@@ -641,7 +641,9 @@ button.btn-login:hover, button.btn-account-create:hover {
   left: 0;
 }
 
-
+.copy-right span {
+  font-weight: 300;
+}
 
 
 /*****************   COMMENT  ************************************/
