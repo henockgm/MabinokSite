@@ -22,8 +22,8 @@
 			</div>
 
 			<div class="contact-me-desc">		    	    	
-			    	<p> My name is Henock Girmachew Mullissa 
-			    	Software developer, more intersted in web site designing and development with the latest web technologies.</p>	    
+			    	<p> 
+			    	I am software developer, more intersted in web development with the latest technologies. </p>	    
 			</div>
         </div>    
   </div>
