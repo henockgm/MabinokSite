@@ -86,9 +86,10 @@ section.register {
   font-size: 2.2rem;
 }
 
-section.register  a {
-   text-decoration: none;
+.reg-item-1, .reg-item-2 {
+  color: #0077ff;
 }
+
 section.register:hover .reg-item-1 {
    font-size: 20px; 
    color: #ffffff;
