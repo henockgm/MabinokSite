@@ -61,7 +61,7 @@ fclose($myfile);
           	   ?>
                   
             
-            <section class="col-sm-6 col-md-4 col-lg-2 register"> 
+            <section class="col-xs-4 col-sm-3 col-md-3 col-lg-2 register"> 
              <div class="reg-id"> <a class="reg-item-1 href="#"> <?php echo $reg_parts[0]; ?> </a></div>
              <div class="reg-val"> <a class="reg-item-2 text-animate" href="#"><?php echo $reg_parts[1]; ?> </a></div>
             </section>
