@@ -1,7 +1,23 @@
 
- .navbar {
-  background-color:  #7bc833;
+ body {
+  background: rgb(237, 241, 244) !important;
  }
+
+ .navbar {
+  background-color:  #4c7c20;
+ }
+
+ul li a, a.navbar-brand {
+  color: #ffffff;
+}
+
+a.navbar-brand:hover {
+  color: #d9d9d9;
+}
+
+ul.nav li:focus {
+  background-color: red !important;
+}
 
 
 li.item-link {
@@ -46,7 +62,7 @@ section.register {
   position: relative;
   display: block;
   height: 100px;
-  border: 1px solid #d9d9d9;
+  border: 1px solid #f7f8f9;
   padding: 0 !important;
   text-align: center;
   margin-bottom: 8px;
@@ -70,7 +86,7 @@ section.register {
   height: 30%;
   width: 100%;
   background-color: #fff;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid rgb(237, 241, 244);
 }
 
 .reg-val {
@@ -115,7 +131,7 @@ footer {
 
 footer div{
   text-align: center;
-  color:  #fff;
+  color:  #f7f8f9;
   font-weight: 400;
 }
 
@@ -133,14 +149,15 @@ footer p.author {
 }
 
 
-section.register:hover {
+/*section.register.hover {
+
   -webkit-transform: scale(1.1) ;
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
   transform: scale(1.1);
 }
-
+*/
 /*section:hover div {
   background-color: #809fff;
   color: #fff;
