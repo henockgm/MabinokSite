@@ -40,6 +40,10 @@
 		<li><a href="http://www.instagram.com/submit?url=" title="Share on Instagram" target="_blank" data-placement="top" class="btn btn-instagram"><i class="fa fa-instagram in-custom"></i> </a></li>
 		<!-- LinkedIn --> 
 		<li><a href="http://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=" title="Share on LinkedIn" target="_blank" class="btn btn-linkedin"><i class="fa fa-linkedin ln-custom"></i> </a></li>
+        
+        <li><a href="https://github.com/henockgm" title="Share on LinkedIn" target="_blank" class="btn btn-linkedin"><i class="fa fa-github-square" style="font-size:36px"></i> </a></li>
+
+		
 
 	</ul>
 
