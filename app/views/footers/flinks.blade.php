@@ -41,7 +41,7 @@
 		<!-- LinkedIn --> 
 		<li><a href="http://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=" title="Share on LinkedIn" target="_blank" class="btn btn-linkedin"><i class="fa fa-linkedin ln-custom"></i> </a></li>
         
-        <li><a href="https://github.com/henockgm" title="Share on Github" target="_blank" class="btn btn-github"><i class="fa fa-github-square gt-custom" style="font-size:24px"></i> </a></li>
+        <li><a href="https://github.com/henockgm" title="Share on Github" target="_blank" class="btn btn-github"><i class="fa fa-github-square gt-custom" style="font-size:36px"></i> </a></li>
 
 		
 
