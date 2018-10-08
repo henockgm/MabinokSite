@@ -826,7 +826,7 @@ ul.socialmedialinks {
   border: 1px solid #888;
 }
 
-.tw-custom, .fb-custom, .gp-custom, .in-custom, .ln-custom {
+.tw-custom, .fb-custom, .gp-custom, .in-custom, .ln-custom, .gt-custom {
   color: #888;
 }
 
@@ -839,6 +839,7 @@ a.btn-facebook:hover    {background-color: #5c5cd6;}
 a.btn-googleplus:hover  {background-color: #ff3300;} 
 a.btn-instagram:hover   {background: -webkit-linear-gradient(top, #800080, #ff8000, #ff3300);} 
 a.btn-linkedin:hover    {background-color: #0077b3;}  
+a.btn-github:hover    {background-color: #610791;} 
   
 
 
